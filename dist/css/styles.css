@@ -770,8 +770,12 @@ progress {
   width: 236px;
   height: 48px;
   left: 60px;
-  top: 510px;background: #E7C377;border-radius: 4px;color: #FFFFFF;
+  top: 510px;
+  background: #E7C377;
+  border-radius: 4px;
+  color: #FFFFFF;
   border: 0px;
+
 }
 .col-7 {
   flex: 0 0 auto;
