@@ -765,8 +765,18 @@ progress {
   flex: 0 0 auto;
   width: 50%;
 }
+.button:hover{
+  width: 236px;
+  height: 48px;
+  left: 60px;
+  top: 510px;
+  background: #FFAD00;
+  border-radius: 4px;
+  color: #FFFFFF;
+  border: 0px;
+}
 
-#buttonUp{
+.button{
   width: 236px;
   height: 48px;
   left: 60px;
