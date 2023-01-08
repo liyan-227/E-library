@@ -671,6 +671,7 @@ progress {
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
+    
   }
 }
 .row {
@@ -765,6 +766,13 @@ progress {
   width: 50%;
 }
 
+#buttonUp{
+  width: 236px;
+  height: 48px;
+  left: 60px;
+  top: 510px;background: #E7C377;border-radius: 4px;color: #FFFFFF;
+  border: 0px;
+}
 .col-7 {
   flex: 0 0 auto;
   width: 58.33333333%;
