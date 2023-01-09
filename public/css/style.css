@@ -88,6 +88,46 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.cardbackground{
+position: absolute;
+width: 254px;
+height: 83px;
+right: 100px;
+top: 473px;
+
+background: #FAFAFA;
+border-radius: 10px;
+}
+.cardbackground2{
+  position: absolute;
+  width: 254px;
+  height: 83px;
+  top: 473px;
+  right: 374px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  }
+  
+.imagecard{
+position: relative;
+height: 77px;
+top: 3.5px;
+background: #FAFAFA;
+opacity: 0.8;
+
+}
+.textcard{
+  width: 167px;
+height: 54px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+color: #4C605B;
+}
 
 hr {
   margin: 1rem 0;
