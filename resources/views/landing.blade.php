@@ -9,18 +9,14 @@
     <title>STIDKI</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
     <!-- kebutuhan bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <!-- Bootstrap icons-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
 </head>
@@ -43,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features">E-Perpustakaan</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#ke3">E-repository</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#ke4">Layanan</a></li>
-                    <button class="button">Explore Perpustakaan</button>
+                    <button class="button">Explore Perpustakaan </button>
 
                 </ul>
             </div>
@@ -51,7 +47,7 @@
     </nav>
     <!-- Mashead header-->
     <header class="masthead">
-        <div class="container px-5" style="background-image: url({{asset('img/Pattern-01.png')}}); border-radius: 48px;">
+        <div class="container px-5" style="background-image:url({{asset('img/Pattern-01.png')}}); border-radius: 48px;">
 
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
@@ -75,14 +71,13 @@
                                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
-
                                 <div class="carousel-item active">
-                                    <img src="{{asset('img/buku.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px;">
+                                    <img src="{{asset('img/buku.png')}}" class="d-block w-100" alt="buku" style="border-radius: 48px;">
                                     <div class="carousel-caption d-none d-md-block">
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{asset('img/coba.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px; ">
+                                    <img src="{{asset('img/coba.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px;">
                                     <div class="carousel-caption d-none d-md-block">
                                     </div>
                                 </div>
@@ -102,14 +97,13 @@
                             </button>
                         </div>
                         <!-- card gambar-->
-                        <div class="cardbackground" >
-                            <img class="imagecard" src="{{asset('img/logo card.png')}}" alt="...">
+                        <div class="cardbackground">
+                            <img class="imagecard" src="{{asset('img/logo card.png')}}" alt="logo">
                             <div class="card-body">
                             </div>
                         </div>
-                        <div class="cardbackground2" >
-                            <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="...">
-                            <p class="textcard">Dapatkan banyak sumber literasi yang ingin anda temukan</p>
+                        <div class="cardbackground2">
+                            <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="logo">Dapatkan banyak sumber literasi yang ingin anda temukan
                             <div class="card-body">
                             </div>
                         </div>
@@ -136,94 +130,29 @@
     </aside>
     <!-- App features section-->
     <section id="features">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-                    <div class="container-fluid px-5">
-                        <div class="row gx-5">
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Device Mockups</h3>
-                                    <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Flexible Use</h3>
-                                    <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-5 mb-md-0">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Free to Use</h3>
-                                    <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Open Source</h3>
-                                    <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 order-lg-0">
-                    <!-- Features section device mockup-->
-                    <div class="features-device-mockup">
-                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                    <stop class="gradient-start-color" offset="0%"></stop>
-                                    <stop class="gradient-end-color" offset="100%"></stop>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="50" cy="50" r="50"></circle>
-                        </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
-                        </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="50"></circle>
-                        </svg>
-                        <div class="device-wrapper">
-                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <!-- PUT CONTENTS HERE:-->
-                                    <!-- * * This can be a video, image, or just about anything else.-->
-                                    <!-- * * Set the max width of your media to 100% and the height to-->
-                                    <!-- * * 100% like the demo example below.-->
-                                    <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
-                                        <source src="public/img/demo-screen.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <img class="col-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
+                <div class="col-6">
+                    <h3>E-Perpustakaan</h3>
+                    <h2>MEMUDAHKAN AKSES LITERASI ANDA</h2>
+                    <p>E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
+                    <button class="button">Menuju E-Perpustakaan  <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
     <!-- Basic features section-->
-    <section id="ke3" class="bg-light">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <div class="col-12 col-lg-5">
-                    <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+    <section id="ke3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3>E-Repository</h3>
+                    <h2>Lorem ipsum dolor sit AMET</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
+                    <button class="button">Menuju E-Repository  <i class="bi bi-arrow-right"></i></button>
                 </div>
-                <div class="col-sm-8 col-md-6">
-                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
-                </div>
+                <img class="col-4" src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
         </div>
     </section>
@@ -333,8 +262,14 @@
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <!-- Core theme JS-->
     <script src="{{asset('js/scripts.js')}}"></script>
+
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

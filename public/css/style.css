@@ -109,24 +109,26 @@ border-radius: 10px;
   }
   
 .imagecard{
-position: relative;
-height: 77px;
-top: 3.5px;
+  margin-top: 6%;
+  margin-left: 4%;
+  width: 47px;
+  height: 47px;
 background: #FAFAFA;
-opacity: 0.8;
+opacity: 0.7;
 
 }
 .textcard{
   width: 167px;
-height: 54px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 130%;
-/* or 18px */
-color: #4C605B;
+  height: 54px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #4C605B;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 hr {
