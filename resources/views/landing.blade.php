@@ -156,39 +156,24 @@
             </div>
         </div>
     </section>
-    <!-- Call to action section-->
-    <section id="ke4" class="cta">
-        <div class="cta-content">
-            <div class="container px-5">
-                <h2 class="text-white display-1 lh-1 mb-4">
-                    Stop waiting.
-                    <br />
-                    Start building.
-                </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
-            </div>
-        </div>
-    </section>
-    <!-- App badge section-->
-    <section class="bg-gradient-primary-to-secondary" id="download">
-        <div class="container px-5">
-            <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
-            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="public/img/google-play-badge.svg" alt="..." /></a>
-                <a href="#!"><img class="app-badge" src="public/img/app-store-badge.svg" alt="..." /></a>
-            </div>
-        </div>
-    </section>
+
     <!-- Footer-->
-    <footer class="bg-black text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div class="mb-2">&copy; Your Website 2022. All Rights Reserved.</div>
-                <a href="#!">Privacy</a>
-                <span class="mx-1">&middot;</span>
+    <footer class="bg-gradient-primary-to-secondary py-5">
+        <div class="container gx-5">
+        <div class="row"> 
+        <div class="col-6">
+        <img class="logokecil" src="{{asset('img/logo.png')}}"
+            <a class="textfooter " style="font-family:Cormorant; color: #EDBB62;">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
+          
+         
+                <div class="mb-2">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </div>
                 <a href="#!">Terms</a>
                 <span class="mx-1">&middot;</span>
-                <a href="#!">FAQ</a>
+                <a href="#!">Privacy</a>
+
+
+        </div>
+        
             </div>
         </div>
     </footer>
