@@ -22,7 +22,7 @@ class ShowHomePageTest extends TestCase
             'title' => 'berita terkini',
             'picture' => 'www.beritaterkini.com',
             'content' => 'berisi berita terupdate',
-          ]);S
+          ]);
     
     }
    
