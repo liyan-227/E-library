@@ -53,7 +53,7 @@
                 <div class="col-lg-6">
                     <!-- Mashead text and app badges-->
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-1 lh-1 mb-3">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
+                        <h1 class="display-1 lh-1 mb-5" style="color: #004634;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
                         <p class="lead fw-normal text-muted mb-5">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <button class="button">Explore Perpustakaan <i class="bi bi-arrow-right" ;></i></button>
@@ -63,11 +63,7 @@
                 <div class="col-lg-6">
                     <!-- slider image -->
                     <div id="carouselExampleIndicators" class="carousel slide col-l-6" data-ride="carousel" style="left: 50px;">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                        </ol>
+                        
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="{{asset('img/buku.png')}}" class="d-block w-100" alt="buku" style="border-radius:48px;">
@@ -80,12 +76,10 @@
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
+                           
                         </button>
                         <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                          
                         </button>
                     </div>
                     <!-- card gambar-->
@@ -97,7 +91,7 @@
                     </div>
                     <div class="cardbackground2">
                         <div class="cardlogo text-left text-muted " style="font-size: small; text-align: center; ">
-                            <img class="imagecard " src="{{asset('img/logo card2.png')}}" alt="logo">
+                            <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="logo">
                             <p class="teks"><br>Dapatkan banyak sumber literasi yang ingin anda temukan</p>
                         </div>
                     </div>
@@ -107,15 +101,17 @@
             </div>
     </header>
     <!-- Quote/testimonial aside-->
-    <aside class="text-center bg-gradient-primary-to-secondary">
-        <div class="container px-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-xl-9">
-                    <div class="size-24 text-white mb-1">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
+    <aside class="bg-gradient-primary-to-secondary">
+        <div class="container px-5 ">
+            <div class="row gx-5 justify-content-center ">
+                <div class="col-lg-9">
+                    <div class="text-center size-24 text-white mb-1">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
                 </div>
             </div>
         </div>
     </aside>
+
+  
     <!-- App features section-->
     <section id="features">
         <div class="container">
@@ -154,7 +150,7 @@
                     <p class="footer-text">PERPUSTAKAAN <br> STIDKI AL HAMIDY</p>
                     <a style="color:#F9F9ED; font-style: normal;">Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
                     <i class="bi bi-geo-alt-fill" style="color: #F9F9ED;"><a class="text-location"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a><br></i>
-                    <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: 'Poppins';font-style: normal;"> +62823-3706-3767</i>
+                    <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: 'Poppins';font-style: normal;"> +62 823-3706-3767</i>
                     <br><br>
                     <hr style="color: #F9F9ED;">
                     <a style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
