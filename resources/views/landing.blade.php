@@ -64,7 +64,7 @@
                     <!-- Masthead device mockup feature-->
                     <div class="masthead-device-mockup">
                         <!-- slider image -->
-                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide col-l-6" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -73,18 +73,15 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="{{asset('img/buku.png')}}" class="d-block w-100" alt="buku" style="border-radius: 48px;">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
+                                   
                                 </div>
                                 <div class="carousel-item">
                                     <img src="{{asset('img/coba.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px;">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
+                                   
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item ">
                                     <img src="{{asset('img/coba2.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px;">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
@@ -98,13 +95,15 @@
                         </div>
                         <!-- card gambar-->
                         <div class="cardbackground">
-                            <img class="imagecard" src="{{asset('img/logo card.png')}}" alt="logo">
-                            <div class="card-body">
+                        <div class="cardlogo text-left text-muted " style="font-size: small; text-align: center; ">
+                            <img class="imagecard " src="{{asset('img/logo card.png')}}" alt="logo">
+                            <p class="teks"><br>Temukan banyak Buku dan Kitab dengan cara yang mudah</p>
                             </div>
                         </div>
-                        <div class="cardbackground2">
-                            <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="logo">Dapatkan banyak sumber literasi yang ingin anda temukan
-                            <div class="card-body">
+                        <div class="cardbackground2" >
+                            <div class="cardlogo text-left text-muted " style="font-size: small; text-align: center; ">
+                            <img class="imagecard " src="{{asset('img/logo card2.png')}}" alt="logo">
+                            <p class="teks"><br>Dapatkan banyak sumber literasi yang ingin anda temukan</p>
                             </div>
                         </div>
                         <!--tutup card gambar -->
@@ -119,7 +118,7 @@
         </div>
     </header>
     <!-- Quote/testimonial aside-->
-    <aside class="text-center bg-gradient-primary-to-secondary">
+<aside class="text-center bg-gradient-primary-to-secondary">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-9">
@@ -133,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <img class="col-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
-                <div class="col-6">
+                <div class="col-6 offset-1">
                     <h3>E-Perpustakaan</h3>
                     <h2>MEMUDAHKAN AKSES LITERASI ANDA</h2>
                     <p>E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
@@ -146,13 +145,13 @@
     <section id="ke3">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 ">
                     <h3>E-Repository</h3>
                     <h2>Lorem ipsum dolor sit AMET</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
                     <button class="button">Menuju E-Repository  <i class="bi bi-arrow-right"></i></button>
                 </div>
-                <img class="col-4" src="{{asset('img/perpus2.png')}}" alt="perpus">
+                <img class="col-4 offset-1 col-sm" src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
         </div>
     </section>
