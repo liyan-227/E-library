@@ -88,30 +88,47 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+@media screen and (max-width: 412){
+  .cardbackground{
+    position: absolute;
+    width: 154px;
+    height: 33px;
+    right: 136px;
+    top: 20px;
+    float: left;
+    background: #FAFAFA;
+    border-radius: 10px;
+    }
+    .cardbackground2{
+      position: absolute;
+      width: 154px;
+      height: 33px;
+      top: 573px;
+      right: 20px;
+      background: #FAFAFA;
+      border-radius: 10px;
+      float: left;
+      }
+}
+
 .cardbackground{
 position: absolute;
 width: 254px;
 height: 83px;
-right: 100px;
-top: 473px;
+right: 136px;
+top: 573px;
 float: left;
 background: #FAFAFA;
 border-radius: 10px;
 }
-@media (max-width: 412){
-  .cardbackground{
- 
-    }
-    .cardbackground2{
-   
-      }
-}
+
 .cardbackground2{
   position: absolute;
   width: 254px;
   height: 83px;
-  top: 473px;
-  right: 374px;
+  top: 573px;
+  right: 420px;
   background: #FAFAFA;
   border-radius: 10px;
   float: left;
@@ -125,7 +142,7 @@ border-radius: 10px;
   width: 52px;
   float: left;
   height: 52px;
-background: #FAFAFA;
+background: #4D605B;;
 opacity: 0.7;
 
 }
@@ -138,12 +155,11 @@ opacity: 0.7;
   font-size: 14px;
   line-height: 130%;
   color: #4C605B;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+
 }
 
 .logokecil{
+  float: left;
 width: 64px;
 height: 64px;
 margin-right: 20px;
@@ -11709,4 +11725,27 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
+}
+
+.footer-text{
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EDBB62;;
+}
+.text-location{
+
+  font-family: 'Poppins';
+font-style: normal;
+font-size: 16px;
+line-height: 26px;
+color: #F9F9ED;
+text-decoration: none;
 }
