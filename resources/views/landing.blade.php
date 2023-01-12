@@ -23,7 +23,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <div class="image">
                 <img src="{{asset('img/logo.png')}}" style="width: 64px; height: 64px; margin-right: 10px; margin-bottom: 10px;" class="img-circle elevation-2" alt="User Image">
@@ -34,35 +34,34 @@
                 <i class="bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#carouselExampleCaptions">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">E-Perpustakaan</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#ke3">E-repository</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#ke4">Layanan</a></li>
-                    <button class="button">Explore Perpustakaan </button>
+                <ul class="navbar-nav ms-auto me-2 my-1 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#E-perpus">E-Perpustakaan</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#E-prints">E-repository</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#layanan">Layanan</a></li>
+                    <button class="button"><a class="text-decoration-none text-white" href="#E-perpus" >Explore Perpustakaan</a>  </button>
 
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Mashead header-->
-    <header class="masthead">
-        <div class="container px-5" style="background-image:url({{asset('img/Pattern-01.png')}}); border-radius: 48px;">
-
+    <header class="masthead mb-5" id="beranda">
+        <div class="container px-3" style="background-image:url({{asset('img/Pattern-01.png')}}); border-radius: 48px;">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
                     <!-- Mashead text and app badges-->
-                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-1 lh-1 mb-5" style="color: #004634;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
-                        <p class="lead fw-normal text-muted mb-5">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
+                    <div class="mb-2 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-1 lh-1 mb-5" style="color: #004634; font-family: Cormorant;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
+                        <p class="lead fw-normal text-muted mb-5" style="font-family: Poppins;">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <button class="button">Explore Perpustakaan <i class="bi bi-arrow-right" ;></i></button>
+                            <button class="button "><a class="text-decoration-none text-white" href="#E-perpus" >Explore Perpustakaan</a>  <i class="bi bi-arrow-right" ;></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <!-- slider image -->
-                    <div id="carouselExampleIndicators" class="carousel slide col-sm-4 col-l-6 col-sm-12 ms-lg-5" data-ride="carousel">
+                    <div  class="carousel slide col-sm-4 col-l-6 col-sm-12 ms-lg-5" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="{{asset('img/buku.png')}}" class="d-block w-100 " alt="buku" style="border-radius:48px;">
@@ -107,34 +106,34 @@
         <div class="container">
             <div class="row gx-5 justify-content-center ">
                 <div class="col-lg-9">
-                    <div class="text-center size-24 text-white mb-1">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
+                    <div class="text-center size-24 text-white mb-1" style="font-family: Poppins;">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
                 </div>
             </div>
         </div>
     </aside>
-    <!-- App features section-->
-    <section id="features">
+    <!-- App E-perpus section-->
+    <section id="E-perpus">
         <div class="container">
             <div class="row">
                 <img class="col-lg-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
                 <div class="col-lg-6">
-                    <h3>E-Perpustakaan</h3>
-                    <h2>MEMUDAHKAN AKSES LITERASI ANDA</h2>
-                    <p class="my-4">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
+                    <h3 style="font-family: Poppins;">E-Perpustakaan</h3>
+                    <h2 style="font-family: Cormorant;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
+                    <p class="my-4" style="font-family: Poppins;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
                     <button class="button">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Basic features section-->
-    <section id="ke3">
+    <!-- Basic E-perpus section-->
+    <section id="E-prints">
         <div class="container">
             <div class="row">
-            <img class="imagehp col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
+                <img class="imagehp col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
                 <div class="col-lg-6 ">
-                    <h3>E-Repository</h3>
-                    <h2>Lorem ipsum dolor sit AMET</h2>
-                    <p class="my-4">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
+                    <h3 style="font-family: Poppins;">E-Repository</h3>
+                    <h2 style="font-family: Cormorant">Lorem ipsum dolor sit AMET</h2>
+                    <p class="my-4" style="font-family: Poppins;">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
                     <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
                 <img class="imagedekstop col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
@@ -143,28 +142,29 @@
     </section>
 
     <!-- Footer-->
-    <footer class="bg-gradient-primary-to-secondary py-5">
-        <div class="container gx-lg-5 ">
+    <footer id="layanan" class="bg-gradient-primary-to-secondary py-5">
+        <div class="container gx-lg-5">
             <div class="row">
                 <div class="col-lg-7">
                     <img class="logokecil" src="{{asset('img/logo.png')}}">
                     <p class="footer-text">PERPUSTAKAAN <br> STIDKI AL HAMIDY</p>
-                    <a class="text-decoration-none" style="color:#F9F9ED; font-style: normal;"><br>Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
-                    <i class="bi bi-geo-alt-fill text-decoration-none" style="color: #F9F9ED;"><a class="text-location text-decoration-none"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a><br></i>
-                    <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: 'Poppins';font-style: normal;"> +62 823-3706-3767</i>
+                    <a class="text-decoration-none" style="color:#F9F9ED; font-style: normal; font-family: Poppins;"><br>Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
+                    <i class="bi bi-geo-alt-fill text-decoration-none" style="color: #F9F9ED; font-family: Poppins;"><a class="text-location text-decoration-none"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a><br></i>
+                    <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: Poppins; font-style: normal;"> +62 823-3706-3767</i>
                     <br><br>
-                   </div>
-                   <div class="dropdown-menu col-4-end">
-  <h6 class="dropdown-header">Dropdown header</h6>
-  <a class="dropdown-item" href="#">Action</a>
-  <a class="dropdown-item" href="#">Another action</a>
-</div>
-                   <hr style="color: #F9F9ED;">
-                   
                 </div>
-                
-                <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
-                <a  class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>   
+                <div class="col-5 text-white">
+                        <h6 class="dropdown-header text-white">Menu</h6>
+                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#beranda">Beranda</a>
+                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
+                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
+                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
+                </div>
+                <hr style="color: #F9F9ED;">
+
+            </div>
+            <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
+            <a class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>
         </div>
     </footer>
 
