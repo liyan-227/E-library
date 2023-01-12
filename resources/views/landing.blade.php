@@ -23,13 +23,13 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <div class="image">
                 <img src="{{asset('img/logo.png')}}" style="width: 64px; height: 64px; margin-right: 10px; margin-bottom: 10px;" class="img-circle elevation-2" alt="User Image">
             </div>
             <a class="navbar-brand" style="font-family:Cormorant; color: #EDBB62;" href="#page-top">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" > 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
             </button>
@@ -75,30 +75,30 @@
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                           
+
                         </button>
                         <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                          
+
                         </button>
                     </div>
                     <!-- card gambar-->
-                <div class="cardback">
-                    <div class="cardbackground">
-                        <div class="cardlogo text-left text-muted" >
-                            <img class="imagecard " src="{{asset('img/logo card.png')}}" alt="logo">
-                            <p class="teks"><br>Temukan banyak Buku dan Kitab dengan cara yang mudah</p>
+                    <div class="cardback">
+                        <div class="cardbackground">
+                            <div class="cardlogo text-left text-muted">
+                                <img class="imagecard " src="{{asset('img/logo card.png')}}" alt="logo">
+                                <p class="teks"><br>Temukan banyak Buku dan Kitab dengan cara yang mudah</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cardbackground2">
-                        <div class="cardlogo text-left text-muted" >
-                            <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="logo">
-                            <p class="teks"><br>Dapatkan banyak sumber literasi yang ingin anda temukan</p>
+                        <div class="cardbackground2">
+                            <div class="cardlogo text-left text-muted">
+                                <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="logo">
+                                <p class="teks"><br>Dapatkan banyak sumber literasi yang ingin anda temukan</p>
+                            </div>
                         </div>
+                        <!--tutup card gambar -->
+                        <!-- tutup slider -->
                     </div>
-                    <!--tutup card gambar -->
-                    <!-- tutup slider -->
                 </div>
-            </div>
     </header>
     <!-- Quote/testimonial aside-->
     <img class="vectorkiri img-fluid " src="{{asset('img/Vector.png')}}" alt="Vector">
@@ -109,7 +109,7 @@
                 <div class="col-lg-9">
                     <div class="text-center size-24 text-white mb-1">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
                 </div>
-        </div>
+            </div>
         </div>
     </aside>
     <!-- App features section-->
@@ -130,37 +130,44 @@
     <section id="ke3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 " >
+            <img class="imagehp col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
+                <div class="col-lg-6 ">
                     <h3>E-Repository</h3>
                     <h2>Lorem ipsum dolor sit AMET</h2>
                     <p class="my-4">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
                     <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
-                <img class="col-lg-4 offset-lg-1"  src="{{asset('img/perpus2.png')}}" alt="perpus">
+                <img class="imagedekstop col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
         </div>
     </section>
 
     <!-- Footer-->
     <footer class="bg-gradient-primary-to-secondary py-5">
-        <div class="container gx-5">
+        <div class="container gx-lg-5 ">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-7">
                     <img class="logokecil" src="{{asset('img/logo.png')}}">
                     <p class="footer-text">PERPUSTAKAAN <br> STIDKI AL HAMIDY</p>
-                    <a style="color:#F9F9ED; font-style: normal;">Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
-                    <i class="bi bi-geo-alt-fill" style="color: #F9F9ED;"><a class="text-location"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a><br></i>
+                    <a class="text-decoration-none" style="color:#F9F9ED; font-style: normal;"><br>Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
+                    <i class="bi bi-geo-alt-fill text-decoration-none" style="color: #F9F9ED;"><a class="text-location text-decoration-none"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a><br></i>
                     <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: 'Poppins';font-style: normal;"> +62 823-3706-3767</i>
                     <br><br>
-                    <hr style="color: #F9F9ED;">
-                    <a style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
-                    <a href="#!" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>
-
+                   </div>
+                   <div class="dropdown-menu col-4-end">
+  <h6 class="dropdown-header">Dropdown header</h6>
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+</div>
+                   <hr style="color: #F9F9ED;">
+                   
                 </div>
-            </div>
+                
+                <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
+                <a  class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>   
         </div>
     </footer>
-   
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

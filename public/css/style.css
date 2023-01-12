@@ -165,6 +165,24 @@ border-radius: 10px;
     }
   }
 
+  @media (min-width: 990px) {
+    .imagehp{
+      display: none;
+    }
+    .imagedekstop{
+      display: block;
+    }
+  }
+  @media (max-width: 989px) {
+    .imagehp{
+      display: block;
+    }
+    .imagedekstop{
+      display: none;
+    }
+    
+  }
+ 
 .vectorkiri{
 position: relative;
 bottom: 0px;
