@@ -6,12 +6,12 @@
   <div class="container-fluid">
     <div class="row mb-2">
       <div class="col-sm-6">
-        <h1 class="m-0">Jual beli</h1>
+        <h1 class="m-0">Artikel</h1>
       </div><!-- /.col -->
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
           <li class="breadcrumb-item"><a href="">Home</a></li>
-          <li class="breadcrumb-item"><a href="{{ route('news.index') }}">Jual Beli</a></li>
+          <li class="breadcrumb-item"><a href="{{ route('news.index') }}">Artikel</a></li>
           <li class="breadcrumb-item active">Create</li>
         </ol>
       </div><!-- /.col -->
@@ -35,22 +35,22 @@
           <div class="row">
             <div class="col-6">
               <div class="form-group">
-                <label for="title">Pelanggan</label>
-                <input type="text" name="pelanggan" class="form-control @error('pelanggan') is-invalid @enderror" placeholder="pelanggan baru">
+                <label for="title">Judul</label>
+                <input type="text" name="pelanggan" class="form-control @error('pelanggan') is-invalid @enderror" placeholder="Masukkan judul">
                 <small class="text-danger">@error('pelanggan') {{$message}} @enderror</small>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
-                <label for="picture">Barang</label>
+                <label for="picture">Gambar</label>
                 <input type="text" name="barang" class="form-control @error('barang') is-invalid @enderror" placeholder="barang baru">
                 <small class="text-danger">@error('barang') {{$message}} @enderror</small>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
-                <label for="content">Transaksi</label>
-                <input type="text" name="transaksi" class="form-control @error('transaksi') is-invalid @enderror" placeholder="transaksi baru">
+                <label for="content">Deskripsi</label>
+                <input type="text" name="transaksi" class="form-control @error('transaksi') is-invalid @enderror" placeholder="Masukkan deskripsi">
                 <small class="text-danger">@error('transaksi') {{$message}} @enderror</small>
               </div>
             </div>

@@ -47,9 +47,9 @@
             @foreach ($news as $news)
             <tr>
               <td>{{ $loop->iteration }}</td>
-              <td>{{ $news->pelanggan }}</td>
-              <td>{{ $news->barang }}</td>
-              <td>Rp.{{$news->transaksi }},00</td>
+              <td>{{ $news->judul }}</td>
+              <td><a href="{{ $news->gambar }}">Lihat gambar</a></td>
+              <td>{{$news->deskripsi }}</td>
               <td>
                 <a href="{{ route('news.edit', [$news->id]) }}" class="btn btn-warning float-left m-1">Edit</a>
                 <form class="float-left m-1" action="{{ route('news.destroy', [$news->id]) }}" method="POST">
