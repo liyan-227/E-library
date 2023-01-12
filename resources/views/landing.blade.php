@@ -23,13 +23,13 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" >
         <div class="container px-5">
             <div class="image">
                 <img src="{{asset('img/logo.png')}}" style="width: 64px; height: 64px; margin-right: 10px; margin-bottom: 10px;" class="img-circle elevation-2" alt="User Image">
             </div>
             <a class="navbar-brand" style="font-family:Cormorant; color: #EDBB62;" href="#page-top">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" > 
                 Menu
                 <i class="bi-list"></i>
             </button>
@@ -62,17 +62,16 @@
                 </div>
                 <div class="col-lg-6">
                     <!-- slider image -->
-                    <div id="carouselExampleIndicators" class="carousel slide col-l-6" data-ride="carousel" style="left: 50px;">
-                        
+                    <div id="carouselExampleIndicators" class="carousel slide col-sm-4 col-l-6 col-sm-12 ms-lg-5" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{asset('img/buku.png')}}" class="d-block w-100" alt="buku" style="border-radius:48px;">
+                                <img src="{{asset('img/buku.png')}}" class="d-block w-100 " alt="buku" style="border-radius:48px;">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{asset('img/coba.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px;">
+                                <img src="{{asset('img/coba.png')}}" class="d-block w-100 " alt="..." style="border-radius: 48px;">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('img/coba2.png')}}" class="d-block w-100" alt="..." style="border-radius: 48px;">
+                                <img src="{{asset('img/coba2.png')}}" class="d-block w-100 " alt="..." style="border-radius: 48px;">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -83,14 +82,15 @@
                         </button>
                     </div>
                     <!-- card gambar-->
+                <div class="cardback">
                     <div class="cardbackground">
-                        <div class="cardlogo text-left text-muted " style="font-size: small; text-align: center; ">
+                        <div class="cardlogo text-left text-muted" >
                             <img class="imagecard " src="{{asset('img/logo card.png')}}" alt="logo">
                             <p class="teks"><br>Temukan banyak Buku dan Kitab dengan cara yang mudah</p>
                         </div>
                     </div>
                     <div class="cardbackground2">
-                        <div class="cardlogo text-left text-muted " style="font-size: small; text-align: center; ">
+                        <div class="cardlogo text-left text-muted" >
                             <img class="imagecard" src="{{asset('img/logo card2.png')}}" alt="logo">
                             <p class="teks"><br>Dapatkan banyak sumber literasi yang ingin anda temukan</p>
                         </div>
@@ -116,8 +116,8 @@
     <section id="features">
         <div class="container">
             <div class="row">
-                <img class="col-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
-                <div class="col-6 offset-1">
+                <img class="col-lg-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
+                <div class="col-lg-6 offset-1">
                     <h3>E-Perpustakaan</h3>
                     <h2>MEMUDAHKAN AKSES LITERASI ANDA</h2>
                     <p>E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
@@ -130,13 +130,13 @@
     <section id="ke3">
         <div class="container">
             <div class="row">
-                <div class="col-6 ">
+                <div class="col-lg-6 " >
                     <h3>E-Repository</h3>
                     <h2>Lorem ipsum dolor sit AMET</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
-                    <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
+                    <button class="button mt-lg-5">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
-                <img class="col-4 offset-1 col-sm" src="{{asset('img/perpus2.png')}}" alt="perpus">
+                <img class="col-lg-4 offset-lg-1"  src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
         </div>
     </section>
@@ -145,7 +145,7 @@
     <footer class="bg-gradient-primary-to-secondary py-5">
         <div class="container gx-5">
             <div class="row">
-                <div class="col-12">
+                <div class="col-lg-12">
                     <img class="logokecil" src="{{asset('img/logo.png')}}">
                     <p class="footer-text">PERPUSTAKAAN <br> STIDKI AL HAMIDY</p>
                     <a style="color:#F9F9ED; font-style: normal;">Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
@@ -160,74 +160,7 @@
             </div>
         </div>
     </footer>
-    <!-- Feedback Modal-->
-    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
-                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

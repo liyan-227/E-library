@@ -89,27 +89,18 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-@media screen and (max-width: 412){
-  .cardbackground{
+@media (max-width: 768px){
+  .cardback{
+   content-visibility: hidden;
+  }
+}
+
+@media (min-width: 997px){
+  .cardback{
     position: absolute;
-    width: 154px;
-    height: 33px;
-    right: 136px;
-    top: 20px;
-    float: left;
-    background: #FAFAFA;
-    border-radius: 10px;
-    }
-    .cardbackground2{
-      position: absolute;
-      width: 154px;
-      height: 33px;
-      top: 573px;
-      right: 20px;
-      background: #FAFAFA;
-      border-radius: 10px;
-      float: left;
-      }
+    bottom: 700px;
+    left: 600px;
+  }
 }
 
 .cardbackground{
@@ -121,6 +112,11 @@ top: 573px;
 float: left;
 background: #FAFAFA;
 border-radius: 10px;
+}
+
+.cardlogo{
+  font-size: small; 
+  text-align: center; 
 }
 
 .cardbackground2{
@@ -145,6 +141,7 @@ border-radius: 10px;
   background: #669085; 
 
 }
+
 
 .vectorkiri{
 
