@@ -112,16 +112,15 @@
         </div>
         </div>
     </aside>
-  
     <!-- App features section-->
     <section id="features">
         <div class="container">
             <div class="row">
                 <img class="col-lg-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
-                <div class="col-lg-6 offset-1">
+                <div class="col-lg-6">
                     <h3>E-Perpustakaan</h3>
                     <h2>MEMUDAHKAN AKSES LITERASI ANDA</h2>
-                    <p>E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
+                    <p class="my-4">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
                     <button class="button">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div>
@@ -134,8 +133,8 @@
                 <div class="col-lg-6 " >
                     <h3>E-Repository</h3>
                     <h2>Lorem ipsum dolor sit AMET</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
-                    <button class="button mt-lg-5">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
+                    <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
                 <img class="col-lg-4 offset-lg-1"  src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
