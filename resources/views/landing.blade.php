@@ -101,16 +101,17 @@
             </div>
     </header>
     <!-- Quote/testimonial aside-->
-    <aside class="bg-gradient-primary-to-secondary">
-        <div class="container px-5 ">
+    <img class="vectorkiri img-fluid " src="{{asset('img/Vector.png')}}" alt="Vector">
+    <img class="vectorkanan img-fluid " src="{{asset('img/Vector.png')}}" alt="Vector">
+    <aside class="bg-gradient-primary-to-secondary" style="height: 273px;">
+        <div class="container">
             <div class="row gx-5 justify-content-center ">
                 <div class="col-lg-9">
                     <div class="text-center size-24 text-white mb-1">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
                 </div>
-            </div>
+        </div>
         </div>
     </aside>
-
   
     <!-- App features section-->
     <section id="features">
