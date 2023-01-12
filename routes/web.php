@@ -21,4 +21,4 @@ Route::get('/admin', function () {
     return view('index');
 })->name('news.index');
 
-Route::resource('news', NewsController::class);
+Route::resource('admin/news', NewsController::class);
