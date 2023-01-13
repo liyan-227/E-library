@@ -29,9 +29,9 @@ class NewsApiController extends Controller
   public function store(Request $request)
   {
     $validator = Validator::make($request->all(), [
-      'pelanggan' => 'required|max:200',
-      'barang' => 'required|max:500',
-      'transaksi' => 'required|max:1000',
+      'judul' => 'required|max:200',
+      'file' => 'required',
+      'deskripsi' => 'required|max:1000',
     ]);
 
     if ($validator->fails()) {
@@ -49,9 +49,9 @@ class NewsApiController extends Controller
   public function update(Request $request, $id)
   {
     $validator = Validator::make($request->all(), [
-      'pelanggan' => 'max:200',
-      'barang' => 'max:500',
-      'transaksi' => 'max:1000',
+      'judul' => 'required|max:200',
+      'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+      'deskripsi' => 'required|max:1000',
     ]);
 
     if ($validator->fails()) {
