@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Http\Testing\File;
 
 class NewsController extends Controller
 {
@@ -37,12 +38,26 @@ class NewsController extends Controller
   public function store(Request $request)
   {
     $request->validate([
-      'pelanggan' => 'required|max:200',
-      'barang' => 'required|max:500',
-      'transaksi' => 'required|max:1000',
+      'judul' => 'required|max:200',
+      'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+      'deskripsi' => 'required|max:1000',
     ]);
-    News::create($request->all());
+
+    $file = $request->file('file');
+
+    $nama_file = time() . "_" . $file->getClientOriginalName();
+
+    // isi dengan nama folder tempat kemana file diupload
+    $tujuan_upload = 'img';
+    $file->move($tujuan_upload, $nama_file);
+
+    News::create([
+      'judul'=> $request->judul,
+      'file' => $nama_file,
+      'deskripsi' => $request->deskripsi,
+    ]);
     return redirect()->route('news.index');
+
   }
 
   /**
@@ -77,14 +92,14 @@ class NewsController extends Controller
   public function update(Request $request, $id)
   {
     $request->validate([
-      'pelanggan' => 'required|max:200',
-      'barang' => 'required|max:500',
-      'transaksi' => 'required|max:1000',
+      'judul' => 'required|max:200',
+      'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+      'deskripsi' => 'required|max:1000',
     ]);
     News::findOrFail($id)->update([
-      'pelanggan' => $request->pelanggan,
-      'barang' => $request->barang,
-      'transaksi' => $request->transaksi,
+      'judul' => $request->judul,
+      'file' => $request->file('file')->store('file'),
+      'deskripsi' => $request->deskripsi,
     ]);
     return redirect()->route('news.index');
   }
@@ -97,7 +112,9 @@ class NewsController extends Controller
    */
   public function destroy($id)
   {
-    News::findOrFail($id)->delete();
+    $file = News::find($id);
+    File::delete('img/' . $file->nama_file);
+    $file->delete();
     return redirect()->back();
   }
 }

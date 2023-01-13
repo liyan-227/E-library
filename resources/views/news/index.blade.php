@@ -48,11 +48,11 @@
             <tr>
               <td>{{ $loop->iteration }}</td>
               <td>{{ $news->judul }}</td>
-              <td><a href="{{ $news->gambar }}">Lihat gambar</a></td>
+              <td><img width="150px" src="{{ url('/img/'.$news->file) }}"></td>
               <td>{{$news->deskripsi }}</td>
               <td>
                 <a href="{{ route('news.edit', [$news->id]) }}" class="btn btn-warning float-left m-1">Edit</a>
-                <form class="float-left m-1" action="{{ route('news.destroy', [$news->id]) }}" method="POST">
+                <form class="float-left m-1" action="{{ route('news.destroy', [$news->id]) }}" method="POST" enctype="multipart/form-data">
                   @method('delete')
                   <button type="submit" class="btn btn-danger">Delete</a>
                 </form>

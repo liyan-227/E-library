@@ -29,29 +29,28 @@
         <h3 class="card-title">Create Data</h3>
       </div>
       <!-- /.card-header -->
-      <form action="{{ route('news.store') }}" method="POST">
+      <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
         @CSRF
         <div class="card-body">
           <div class="row">
             <div class="col-6">
               <div class="form-group">
                 <label for="title">Judul</label>
-                <input type="text" name="pelanggan" class="form-control @error('pelanggan') is-invalid @enderror" placeholder="Masukkan judul">
-                <small class="text-danger">@error('pelanggan') {{$message}} @enderror</small>
+                <input type="text" name="judul" class="form-control @error('judul') is-invalid @enderror" placeholder="Masukkan judul">
+                <small class="text-danger">@error('judul') {{$message}} @enderror</small>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
                 <label for="picture">Gambar</label>
-                <input type="text" name="barang" class="form-control @error('barang') is-invalid @enderror" placeholder="barang baru">
-                <small class="text-danger">@error('barang') {{$message}} @enderror</small>
+                <input type="file" name="file" placeholder="Image" multiple>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
                 <label for="content">Deskripsi</label>
-                <input type="text" name="transaksi" class="form-control @error('transaksi') is-invalid @enderror" placeholder="Masukkan deskripsi">
-                <small class="text-danger">@error('transaksi') {{$message}} @enderror</small>
+                <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="Masukkan deskripsi">
+                <small class="text-danger">@error('deskripsi') {{$message}} @enderror</small>
               </div>
             </div>
           </div>

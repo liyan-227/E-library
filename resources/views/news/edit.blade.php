@@ -29,30 +29,29 @@
         <h3 class="card-title">Edit Data</h3>
       </div>
       <!-- /.card-header -->
-      <form action="{{ route('news.update', [$news->id]) }}" method="POST">
-        @CSRF
-        @method('put')
+      <form action="{{ route('news.update', [$news->id]) }}" method="POST" enctype="multipart/form-data">
+        {{ csrf_field() }}
+        {{ method_field('PUT') }}
         <div class="card-body">
           <div class="row">
             <div class="col-6">
               <div class="form-group">
-                <label for="title">pelanggan</label>
-                <input type="text" name="pelanggan" class="form-control @error('pelanggan') is-invalid @enderror" placeholder="pelanggan baru" value="{{$news->pelanggan}}">
-                <small class="text-danger">@error('pelanggan') {{$message}} @enderror</small>
+                <label for="title">Judul</label>
+                <input type="text" name="judul" class="form-control @error('judul') is-invalid @enderror" placeholder="judul baru" value="{{$news->judul}}">
+                <small class="text-danger">@error('judul') {{$message}} @enderror</small>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
-                <label for="picture">Barang</label>
-                <input type="text" name="barang" class="form-control @error('barang') is-invalid @enderror" placeholder="barang baru" value="{{$news->barang}}">
-                <small class="text-danger">@error('barang') {{$message}} @enderror</small>
+                <label for="picture">Gambar</label>
+                <input type="file" name="file" placeholder="Image" multiple>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
-                <label for="content">Transaksi</label>
-                <input type="text" name="transaksi" class="form-control @error('transaksi') is-invalid @enderror" placeholder="transaksi baru" value="{{$news->transaksi}}">
-                <small class="text-danger">@error('transaksi') {{$message}} @enderror</small>
+                <label for="content">Deskripsi</label>
+                <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="deskripsi baru" value="{{$news->deskripsi}}">
+                <small class="text-danger">@error('deskripsi') {{$message}} @enderror</small>
               </div>
             </div>
           </div>
