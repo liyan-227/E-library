@@ -97,9 +97,11 @@ body {
 
 @media (min-width: 997px){
   .cardback{
+    width: 100px;
+    height: 60px;
     position: absolute;
-    bottom: 700px;
-    left: 600px;
+    bottom: 640px;
+    left: 500px;
   }
 }
 
@@ -137,14 +139,54 @@ border-radius: 10px;
   margin-left: 4%;
   width: 52px;
   float: left;
-  height: 52px;
+  height: 100%;
   background: #669085; 
-
 }
 
 
-.vectorkiri{
 
+
+
+.vectorkanan{
+  position: relative;
+  bottom: 0px;
+  float: right;
+  transform: rotate(180deg);
+  left: 150px;
+  }
+
+@media (max-width: 1150px) {
+    .vectorkiri {
+    display: none;
+    height: 1000px;
+    }
+    .vectorkanan{
+      display: none;
+    }
+  }
+
+  @media (min-width: 990px) {
+    .imagehp{
+      display: none;
+    }
+    .imagedekstop{
+      display: block;
+    }
+  }
+  @media (max-width: 989px) {
+    .imagehp{
+      display: block;
+    }
+    .imagedekstop{
+      display: none;
+    }
+    
+  }
+ 
+.vectorkiri{
+position: relative;
+bottom: 0px;
+float: left;
 
 }
 .textcard{
