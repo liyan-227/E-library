@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
-
+use App\Http\Controllers\PhotoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,10 +15,10 @@ use App\Http\Controllers\NewsController;
 */
 
 Route::get('/', function () {
-    return view('landing');
+    return view('landing.index');
 });
 Route::get('/admin', function () {
     return view('index');
 })->name('news.index');
-
+Route::resource('/',PhotoController::class);
 Route::resource('admin/news', NewsController::class);

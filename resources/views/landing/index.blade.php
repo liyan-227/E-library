@@ -127,6 +127,7 @@
     </section>
     <!-- Basic E-perpus section-->
     <section id="E-prints">
+   
         <div class="container">
             <div class="row">
                 <img class="imagehp col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
@@ -136,8 +137,11 @@
                     <p class="my-4" style="font-family: Poppins;">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
                     <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
-                <img class="imagedekstop col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
+                @foreach ($news as $news)
+                <img class="imagedekstop col-lg-4 offset-lg-1" src="{{ url('/img/'.$news->file) }}" alt="perpus">
+                @endforeach
             </div>
+            
         </div>
     </section>
 
