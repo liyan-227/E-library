@@ -137,13 +137,48 @@
                     <p class="my-4" style="font-family: Poppins;">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
                     <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
-                @foreach ($news as $news)
-                <img class="imagedekstop col-lg-4 offset-lg-1" src="{{ url('/img/'.$news->file) }}" alt="perpus">
-                @endforeach
+                <img class="imagedekstop col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
             
         </div>
     </section>
+
+<hr style="color: #004634;">
+    <!-- Konten section-->
+    <section id="E-prints">
+        <div class="container">
+            <div class="row">
+                {{-- <div class="col-lg-6 ">
+                    <h3 style="font-family: Poppins;">{{ ($news->judul) }}</h3>
+                    <p class="my-4" style="font-family: Poppins;">{{ ($news->deskripsi) }}</p>
+                    <button class="button">Baca Selengkapnya<i class="bi bi-arrow-right"></i></button>
+                </div>
+                
+                <img class="imagedekstop col-lg-4 offset-lg-1" src="{{ url('/img/'.$news->file) }}" alt="perpus" width="200px" height="400px" style="border-radius: 48px;"> --}}
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach ($news as $news)
+                    <div class="carousel-item active">
+                    <img src="{{ url('/img/'.$news->file) }}" class="imagedekstop col-lg-4 offset-lg-1" alt="gambar" width="200px" height="400px" style="border-radius: 48px;">
+                    </div>
+                    @endforeach
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+            
+        </div>
+         
+         
+    </section>
+    
 
     <!-- Footer-->
     <footer id="layanan" class="bg-gradient-primary-to-secondary py-5">
