@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
 
-<!-- owl corousel -->
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- owl corousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
 
 </head>
@@ -45,7 +45,7 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#E-perpus">E-Perpustakaan</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#E-prints">E-repository</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#layanan">Layanan</a></li>
-                    <button class="button"><a class="text-decoration-none text-white" href="#E-perpus" >Explore Perpustakaan</a>  </button>
+                    <button class="button"><a class="text-decoration-none text-white" href="#E-perpus">Explore Perpustakaan</a> </button>
 
                 </ul>
             </div>
@@ -61,13 +61,13 @@
                         <h1 class="display-1 lh-1 mb-5" style="color: #004634; font-family: Cormorant;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
                         <p class="lead fw-normal text-muted mb-5" style="font-family: Poppins;">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <button class="button "><a class="text-decoration-none text-white" href="#E-perpus" >Explore Perpustakaan</a>  <i class="bi bi-arrow-right" ;></i></button>
+                            <button class="button "><a class="text-decoration-none text-white" href="#E-perpus">Explore Perpustakaan</a> <i class="bi bi-arrow-right" ;></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <!-- slider image -->
-                    <div  class="carousel slide col-sm-4 col-l-6 col-sm-12 ms-lg-5" data-ride="carousel">
+                    <div class="carousel slide col-sm-4 col-l-6 col-sm-12 ms-lg-5" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="{{asset('img/buku.png')}}" class="d-block w-100 " alt="buku" style="border-radius:48px;">
@@ -133,7 +133,7 @@
     </section>
     <!-- Basic E-perpus section-->
     <section id="E-prints">
-   
+
         <div class="container">
             <div class="row">
                 <img class="imagehp col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
@@ -145,36 +145,36 @@
                 </div>
                 <img class="imagedekstop col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
             </div>
-            
+
         </div>
     </section>
 
 
     <!-- Konten section-->
-<div class="container">
-    <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;line-height: 100%;color: #005A43;
+    <div class="container">
+        <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;line-height: 100%;color: #005A43;
 ">Artikel</h4>
-    <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;"><br>Dapatkan informasi <br>dengan artikel kami</h1>
-</div>
+        <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;"><br>Dapatkan informasi <br>dengan artikel kami</h1>
+    </div>
 
 
     <section id="Berita">
         <div class="container">
             <div class="row">
-            @foreach ($news as $news)
-    <div class="card mx-2 m-sm-2 col-4" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
-    <img class="card-img-top img-fluid" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
-  <div class="card-body">
-    <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
-    <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
-    <a  class="btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; width: 331px;">Baca Selengkapnya</a>
-  </div>
-</div>
-@endforeach
-
-
+                @foreach ($news as $news)
+                <div class="card mx-2 m-sm-2 col-4" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
+                    <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
+                        <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
+                        <a class="btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; width: 331px;">Baca Selengkapnya</a>
+                    </div>
                 </div>
+                @endforeach
+
+
             </div>
+        </div>
     </section>
 
     <!-- Footer-->
@@ -190,11 +190,11 @@
                     <br><br>
                 </div>
                 <div class="col-5 text-white">
-                        <h6 class="dropdown-header text-white">Menu</h6>
-                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#beranda">Beranda</a>
-                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
-                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
-                        <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
+                    <h6 class="dropdown-header text-white">Menu</h6>
+                    <a class="dropdown-item text-white" style="font-family: Poppins;" href="#beranda">Beranda</a>
+                    <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
+                    <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
+                    <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
                 </div>
                 <hr style="color: #F9F9ED;">
 
