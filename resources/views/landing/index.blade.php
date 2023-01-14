@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
+
+<!-- owl corousel -->
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+
 </head>
 
 <body id="page-top">
@@ -117,10 +123,10 @@
             <div class="row">
                 <img class="col-lg-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
                 <div class="col-lg-6">
-                    <h3 style="font-family: Poppins;">E-Perpustakaan</h3>
-                    <h2 style="font-family: Cormorant;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
-                    <p class="my-4" style="font-family: Poppins;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
-                    <button class="button">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></button>
+                    <h3 style="font-family: Poppins; color: #005A43;">E-Perpustakaan</h3>
+                    <h2 style="font-family: Cormorant;color: #000000;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
+                    <p class="my-4" style="font-family: Poppins;color: #4C605B;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
+                    <button class="button"><a class="text-white text-decoration-none" href="http://localhost/perpustakaan/index.php">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></a></button>
                 </div>
             </div>
         </div>
@@ -132,9 +138,9 @@
             <div class="row">
                 <img class="imagehp col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
                 <div class="col-lg-6 ">
-                    <h3 style="font-family: Poppins;">E-Repository</h3>
-                    <h2 style="font-family: Cormorant">Lorem ipsum dolor sit AMET</h2>
-                    <p class="my-4" style="font-family: Poppins;">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
+                    <h3 style="font-family: Poppins; color: #005A43;">E-Repository</h3>
+                    <h2 style="font-family: Cormorant;color: #000000;">Lorem ipsum dolor sit AMET</h2>
+                    <p class="my-4" style="font-family: Poppins;color: #4C605B;">Lorem ipsum dolor sit amet consectetur. Arcu dictum imperdiet leo ultrices turpis at a. Risus venenatis tellus ut sit mollis nisi odio. Diam turpis enim magna fringilla hendrerit sed. In viverra sagittis eu libero. Habitasse rutrum elit semper mauris.</p>
                     <button class="button">Menuju E-Repository <i class="bi bi-arrow-right"></i></button>
                 </div>
                 <img class="imagedekstop col-lg-4 offset-lg-1" src="{{asset('img/perpus2.png')}}" alt="perpus">
@@ -143,17 +149,25 @@
         </div>
     </section>
 
+
     <!-- Konten section-->
+<div class="container">
+    <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;line-height: 100%;color: #005A43;
+">Artikel</h4>
+    <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;"><br>Dapatkan informasi <br>dengan artikel kami</h1>
+</div>
+
+
     <section id="Berita">
         <div class="container">
             <div class="row">
             @foreach ($news as $news)
-    <div class="card mx-2" style="width: 18rem; border-radius: 20px;">
-    <img class="imageberita" src="{{ url('/img/'.$news->file) }}" style="border-radius: 20px; ">
+    <div class="card mx-2 m-sm-2 col-4" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
+    <img class="card-img-top img-fluid" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
   <div class="card-body">
-    <h5 class="card-title">{{ ($news->judul) }}</h5>
-    <p class="card-text">{{ ($news->deskripsi) }}</p>
-    <a href="#" class="btn btn-success">Baca Selanjutnya</a>
+    <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
+    <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
+    <a  class="btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; width: 331px;">Baca Selengkapnya</a>
   </div>
 </div>
 @endforeach
