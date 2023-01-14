@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
 
     <!-- owl corousel -->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    
 
 
 </head>
@@ -42,11 +41,18 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-2 my-1 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#beranda">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#E-perpus">E-Perpustakaan</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#E-prints">E-repository</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#layanan">Layanan</a></li>
-                    <button class="button"><a class="text-decoration-none text-white" href="#E-perpus">Explore Perpustakaan</a> </button>
-
+                    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Layanan
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#E-perpus">E-Library</a>
+          <a class="dropdown-item" href="#E-prints">E-repository</a>
+          <a class="dropdown-item" href="#">Aplikasi Baca</a></a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link me-lg-3" href="#Berita">Artikel</a></li>
+                    <a class="button text-decoration-none text-center pt-2" href="#E-perpus"><p>Explore Perpustakaan</p></a>
                 </ul>
             </div>
         </div>
@@ -61,7 +67,7 @@
                         <h1 class="display-1 lh-1 mb-5" style="color: #004634; font-family: Cormorant;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
                         <p class="lead fw-normal text-muted mb-5" style="font-family: Poppins;">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <button class="button "><a class="text-decoration-none text-white" href="#E-perpus">Explore Perpustakaan</a> <i class="bi bi-arrow-right" ;></i></button>
+                            <a class="button text-decoration-none text-center text-white pt-2" href="#E-perpus">Explore Perpustakaan  <i class="bi bi-arrow-right" ;></i></a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +132,7 @@
                     <h3 style="font-family: Poppins; color: #005A43;">E-Perpustakaan</h3>
                     <h2 style="font-family: Cormorant;color: #000000;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
                     <p class="my-4" style="font-family: Poppins;color: #4C605B;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
-                    <button class="button"><a class="text-white text-decoration-none" href="http://localhost/perpustakaan/index.php">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></a></button>
+                    <button class="button" ><a class="text-decoration-none text-white" href="http://localhost/perpustakaan/index.php">Menuju E-Perpustakaan  <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
             </div>
         </div>
@@ -205,6 +211,8 @@
     </footer>
 
     <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

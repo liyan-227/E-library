@@ -10,9 +10,9 @@
       </div><!-- /.col -->
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
-          <li class="breadcrumb-item"><a href="">Home</a></li>
+          <li class="breadcrumb-item"><a href="">Beranda</a></li>
           <li class="breadcrumb-item"><a href="{{ route('news.index') }}">Artikel</a></li>
-          <li class="breadcrumb-item active">Create</li>
+          <li class="breadcrumb-item active">Buat</li>
         </ol>
       </div><!-- /.col -->
     </div><!-- /.row -->
@@ -26,7 +26,7 @@
     <!-- Small boxes (Stat box) -->
     <div class="card">
       <div class="card-header">
-        <h3 class="card-title">Create Data</h3>
+        <h3 class="card-title">Tambah Data</h3>
       </div>
       <!-- /.card-header -->
       <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
@@ -49,7 +49,7 @@
             <div class="col-6">
               <div class="form-group">
                 <label for="content">Deskripsi</label>
-                <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="Masukkan deskripsi">
+                <textarea type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="Masukkan deskripsi" style="height: 300px;"></textarea>   
                 <small class="text-danger">@error('deskripsi') {{$message}} @enderror</small>
               </div>
             </div>
@@ -58,8 +58,8 @@
         <!-- /.row -->
         <div class="card-footer">
           <div class="d-flex justify-content-end">
-            <a href="{{ route('news.index') }}" class="m-1 btn btn-outline-danger">Back</a>
-            <button type="submit" class="m-1 btn btn-success">Create</button>
+            <a href="{{ route('news.index') }}" class="m-1 btn btn-outline-danger">Kembali</a>
+            <button type="submit" class="m-1 btn btn-success">Tambah</button>
           </div>
         </div>
       </form>
