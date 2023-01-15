@@ -14,11 +14,8 @@ use App\Http\Controllers\PhotoController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing.index');
-});
+
 Route::get('/admin', function () {
-    return view('index');
-})->name('news.index');
+    return view('index');})->name('news.index');
 Route::resource('/',PhotoController::class);
 Route::resource('admin/news', NewsController::class);

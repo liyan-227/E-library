@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
 
     <!-- owl corousel -->
-    
+    <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.carousel.min.css')}}">
+<link rel="stylesheet" href="{{asset('css/owlcarousel/owl.theme.default.min.css')}}">
 
 
 </head>
@@ -167,24 +168,34 @@
     <section id="Berita">
         <div class="container">
             <div class="row">
-                @foreach ($news as $news)
+            <div class="owl-carousel">
+  <div>
+               
+  <script>$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});</script>
+ </div>
+ 
+</div>
+@foreach ($news as $news)
                 <div class="card mx-2 m-sm-2 col-4" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
                     <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
                     <div class="card-body">
                         <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
                         <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
-                        <a class="btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; width: 331px;">Baca Selengkapnya</a>
+                        <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; ">Baca Selengkapnya</a>
                     </div>
                 </div>
                 @endforeach
-
 
             </div>
         </div>
     </section>
 
     <!-- Footer-->
+    <img class="vectorbawah img-fluid float-right" src="{{asset('img/vectorbawah.png')}}" alt="Vector">
     <footer id="layanan" class="bg-gradient-primary-to-secondary py-5">
+    
         <div class="container gx-lg-5">
             <div class="row">
                 <div class="col-lg-7">
@@ -201,14 +212,23 @@
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
+               
                 </div>
-                <hr style="color: #F9F9ED;">
+                
+          
 
             </div>
+            <hr style="color: #F9F9ED;">
             <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
             <a class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>
+        
         </div>
     </footer>
+
+    <!-- owl JS -->
+    <script src="{{asset('js/jquery.min.js')}}"></scrip>
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
