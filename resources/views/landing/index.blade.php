@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
 
     <!-- owl corousel -->
-    <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.carousel.min.css')}}">
-<link rel="stylesheet" href="{{asset('css/owlcarousel/owl.theme.default.min.css')}}">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.carousel.min.css')}} " />
+    <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.theme.default.min.css')}} " />
 </head>
 
 <body id="page-top">
@@ -43,17 +43,19 @@
                 <ul class="navbar-nav ms-auto me-2 my-1 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#beranda">Beranda</a></li>
                     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Layanan
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#E-perpus">E-Library</a>
-          <a class="dropdown-item" href="#E-prints">E-repository</a>
-          <a class="dropdown-item" href="#">Aplikasi Baca</a></a>
-        </div>
-      </li>
-      <li class="nav-item"><a class="nav-link me-lg-3" href="#Berita">Artikel</a></li>
-                    <a class="button text-decoration-none text-center pt-2" href="#E-perpus"><p>Explore Perpustakaan</p></a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#E-perpus">E-Library</a>
+                            <a class="dropdown-item" href="#E-prints">E-repository</a>
+                            <a class="dropdown-item" href="#">Aplikasi Baca</a></a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#Berita">Artikel</a></li>
+                    <a class="button text-decoration-none text-center pt-2" href="#E-perpus">
+                        <p>Explore Perpustakaan</p>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -68,7 +70,7 @@
                         <h1 class="display-1 lh-1 mb-5" style="color: #004634; font-family: Cormorant;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
                         <p class="lead fw-normal text-muted mb-5" style="font-family: Poppins;">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <a class="button text-decoration-none text-center text-white pt-2" href="#E-perpus">Explore Perpustakaan  <i class="bi bi-arrow-right" ;></i></a>
+                            <a class="button text-decoration-none text-center text-white pt-2" href="#E-perpus">Explore Perpustakaan <i class="bi bi-arrow-right" ;></i></a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +135,7 @@
                     <h3 style="font-family: Poppins; color: #005A43;">E-Perpustakaan</h3>
                     <h2 style="font-family: Cormorant;color: #000000;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
                     <p class="my-4" style="font-family: Poppins;color: #4C605B;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
-                    <button class="button" ><a class="text-decoration-none text-white" href="http://localhost/perpustakaan/index.php">Menuju E-Perpustakaan  <i class="bi bi-arrow-right"></i></a> </button>
+                    <button class="button"><a class="text-decoration-none text-white" href="http://localhost/perpustakaan/index.php">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
             </div>
         </div>
@@ -166,36 +168,29 @@
 
 
     <section id="Berita">
-        <div class="container">
-            <div class="row">
-            <div class="owl-carousel">
-  <div>
-               
-  <script>$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});</script>
- </div>
- 
-</div>
-@foreach ($news as $news)
-                <div class="card mx-2 m-sm-2 col-4" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
-                    <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
-                        <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
-                        <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; ">Baca Selengkapnya</a>
+        
+    <div class="container">
+            <div class="news-carousel owl-carousel owl-theme">
+               @foreach ($news as $news)
+                    <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
+                        <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
+                            <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
+                            <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; ">Baca Selengkapnya</a>
+                        </div>
                     </div>
-                </div>
-                @endforeach
-
+                    @endforeach
+                    </div>
             </div>
-        </div>
+            
+
     </section>
 
     <!-- Footer-->
     <img class="vectorbawah img-fluid float-right" src="{{asset('img/vectorbawah.png')}}" alt="Vector">
     <footer id="layanan" class="bg-gradient-primary-to-secondary py-5">
-    
+
         <div class="container gx-lg-5">
             <div class="row">
                 <div class="col-lg-7">
@@ -212,22 +207,19 @@
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
-               
+
                 </div>
-                
-          
+
+
 
             </div>
             <hr style="color: #F9F9ED;">
             <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
             <a class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>
-        
+
         </div>
     </footer>
 
-    <!-- owl JS -->
-    <script src="{{asset('js/jquery.min.js')}}"></scrip>
-<script src="{{asset('js/owl.carousel.min.js')}}"></script>
 
 
     <!-- Bootstrap core JS-->
@@ -242,11 +234,36 @@
     <!-- Core theme JS-->
     <script src="{{asset('js/scripts.js')}}"></script>
 
+        <!-- owl JS -->
+    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+  
+
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+        $('.news-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+            
+        }
+        
+        )  
+    </script>
 </body>
 
 </html>
