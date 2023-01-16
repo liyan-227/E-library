@@ -143,8 +143,18 @@ border-radius: 10px;
   background: #669085; 
 }
 
-
-
+.imageartikel{
+  position: relative;
+  bottom: 0px;
+  float: center;
+  left: 35%;
+  right: 50%;
+}
+.vectorartikel{
+  position: relative;
+  bottom: 0px;
+  float: center;
+  }
 
 
 .vectorkanan{
@@ -161,6 +171,9 @@ border-radius: 10px;
     height: 1000px;
     }
     .vectorkanan{
+      display: none;
+    }
+    .vectorartikel{
       display: none;
     }
   }
@@ -11448,7 +11461,11 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #004634, #004634) !important;
+  /* background: linear-gradient(45deg, #004634, #004634) !important; */
+  background-color: #004634 !important;
+  background-blend-mode:soft-light;
+  background-position: center;
+  background:url({{asset('img/Pattern-02.png')}});
 }
 
 .font-alt {
