@@ -147,8 +147,7 @@ border-radius: 10px;
   position: relative;
   bottom: 0px;
   float: center;
-  left: 35%;
-  right: 50%;
+  
 }
 .vectorartikel{
   position: relative;
@@ -4193,13 +4192,15 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  z-index: 3;
+  width: 100%;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11459,6 +11460,9 @@ html {
   background-color: #004634 !important;
   background-blend-mode:soft-light;
   background-position: center;
+  padding-bottom: 170px;
+  padding-top: 170px;
+  width: 100%;
   background:url({{asset('img/Pattern-02.png')}});
 }
 

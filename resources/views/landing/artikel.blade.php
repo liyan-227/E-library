@@ -73,9 +73,9 @@
     <!-- App E-perpus section-->
     <section id="E-perpus">
         <div class="container">
-            <img class="imageartikel" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
+            <img class="imageartikel rounded mx-auto d-block" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
             <div class="row">
-                <div class="col-lg-6">
+                <div>
                     <p class="my-4" style="font-family: Poppins;color: #4C605B;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
                 </div>
             </div>
@@ -83,27 +83,23 @@
     </section>
 
     <!-- Konten section-->
-    <div class="container">
-        <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;line-height: 100%;color: #005A43;
-">Artikel</h4>
-        <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;"><br>Dapatkan informasi <br>dengan artikel kami</h1>
-    </div>
-
-
     <section id="Berita">
-
+        <div class="container">
+            <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;line-height: 100%;color: #005A43;">Artikel</h4>
+            <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;"><br>Dapatkan informasi <br>dengan artikel kami</h1>
+        </div>
             <div class="news-carousel owl-carousel owl-theme">
-               @foreach ($news as $news)
-                    <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; height: 505px; width: 379px; color:#FFFFFF;">
+                @foreach ($news as $news)
+                    <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
                         <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
                             <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
-                            <a class="buttonberita btn text-center" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377;">Baca Selengkapnya</a>
+                            <a class="buttonberita btn text-center" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; ">Baca Selengkapnya</a>
                         </div>
                     </div>
-                    @endforeach
-                    </div>
+                @endforeach
+            </div>
     </section>
 
     <!-- Footer-->
