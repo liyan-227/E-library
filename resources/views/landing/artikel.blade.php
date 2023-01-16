@@ -59,7 +59,7 @@
         </div>
     </nav>
     <!-- Quote/testimonial aside-->
-    <aside class="bg-gradient-primary-to-secondary" style="background-image:url({{asset('img/Pattern-01.png')}}); height: 273px;">
+    <aside class="bg-artikel" style="background-image:url({{asset('img/Pattern-01.png')}}); height: 273px;">
         {{-- <img class="vectorartikel img-fluid " src="{{asset('img/Pattern-01.png')}}" alt="Vector"> --}}
         <div class="container">
             <div class="row gx-5 justify-content-center ">

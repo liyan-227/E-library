@@ -11456,16 +11456,19 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
+.bg-artikel {
+  background-color: #004634 !important;
+  background-blend-mode:soft-light;
+  background-position: center;
+  background:url({{asset('img/Pattern-02.png')}});
+}
+
 .bg-black {
   background-color: #000 !important;
 }
 
 .bg-gradient-primary-to-secondary {
-  /* background: linear-gradient(45deg, #004634, #004634) !important; */
-  background-color: #004634 !important;
-  background-blend-mode:soft-light;
-  background-position: center;
-  background:url({{asset('img/Pattern-02.png')}});
+  background: linear-gradient(45deg, #004634, #004634) !important;
 }
 
 .font-alt {
