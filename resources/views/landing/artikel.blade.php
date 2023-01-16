@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}} " />
 
     <!-- owl corousel -->
-    <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.carousel.min.css')}}">
-<link rel="stylesheet" href="{{asset('css/owlcarousel/owl.theme.default.min.css')}}">
+   <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.carousel.min.css')}} " />
+    <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.theme.default.min.css')}} " />
 
 
 </head>
@@ -91,30 +91,23 @@
 
 
     <section id="Berita">
-        <div class="container">
-            <div class="row">
-            <div class="owl-carousel">
-  <div>
-               
-  <script>$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});</script>
- </div>
- 
-</div>
-@foreach ($news as $news)
-                <div class="card mx-2 m-sm-2 col-4" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
-                    <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
-                        <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
-                        <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; ">Baca Selengkapnya</a>
+        
+    <div class="container">
+            <div class="news-carousel owl-carousel owl-theme">
+               @foreach ($news as $news)
+                    <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
+                        <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
+                            <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
+                            <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377; ">Baca Selengkapnya</a>
+                        </div>
                     </div>
-                </div>
-                @endforeach
-
+                    @endforeach
+                    </div>
             </div>
-        </div>
+            
+
     </section>
 
     <!-- Footer-->
@@ -167,11 +160,35 @@
     <!-- Core theme JS-->
     <script src="{{asset('js/scripts.js')}}"></script>
 
+    <!-- owl JS -->
+    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+        $('.news-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+            
+        }
+        
+        )  
+    </script>
 </body>
 
 </html>
