@@ -162,7 +162,6 @@ border-radius: 10px;
   bottom: 0px;
   float: right;
   transform: rotate(180deg);
-  left: 150px;
   }
 
 @media (max-width: 1150px) {

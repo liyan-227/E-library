@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="{{asset('css/owlcarousel/owl.theme.default.min.css')}} " />
 </head>
 
-<body id="page-top">
+<body >
+ 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light position-fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
@@ -114,7 +115,7 @@
     </header>
     <!-- Quote/testimonial aside-->
     <img class="vectorkiri img-fluid " src="{{asset('img/Vector.png')}}" alt="Vector">
-    <img class="vectorkanan img-fluid " src="{{asset('img/Vector.png')}}" alt="Vector">
+    <img class="vectorkanan img-fluid " src="{{asset('img/vectorkanan.png')}}" alt="Vector">
     <aside class="bg-gradient-primary-to-secondary" style="height: 273px;">
         <div class="container">
             <div class="row gx-5 justify-content-center ">
@@ -195,22 +196,25 @@
                     <img class="logokecil" src="{{asset('img/logo.png')}}">
                     <p class="footer-text">PERPUSTAKAAN <br> STIDKI AL HAMIDY</p>
                     <a class="text-decoration-none" style="color:#F9F9ED; font-style: normal; font-family: Poppins;"><br>Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
-                    <i class="bi bi-geo-alt-fill text-decoration-none" style="color: #F9F9ED; font-family: Poppins;"><a class="text-location text-decoration-none"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a><br></i>
-                    <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: Poppins; font-style: normal;"> +62 823-3706-3767</i>
+                    <i class="bi bi-geo-alt-fill text-decoration-none" style="color: #F9F9ED; font-family: Poppins;"><a class="text-location text-decoration-none"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a></i>
+                    <br>
+                    <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: Poppins; font-style: normal;"> +62 823-3706-3767 </i>
                     <br><br>
                 </div>
                 <div class="col-5 text-white">
+                
                     <h6 class="dropdown-header text-white">Menu</h6>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#beranda">Beranda</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
-
+                    <br><br>
+                    <div class="float-right"><i class="bi bi-whatsapp" style="width: 26px; height: 26px;"></i> <i class="bi bi-instagram" style="width: 26px; height: 26px;"></i> <i class="bi bi-envelope" style="width: 26px; height: 26px;"></i> <i class="bi bi-youtube" style="width: 26px; height: 26px;"></i></div>
                 </div>
 
 
-
             </div>
+            
             <hr style="color: #F9F9ED;">
             <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
             <a class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>
