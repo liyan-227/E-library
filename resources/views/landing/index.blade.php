@@ -167,7 +167,7 @@
 
     <section id="Berita">
         
-    <div class="container">
+   
             <div class="news-carousel owl-carousel owl-theme">
                @foreach ($news as $news)
                     <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
@@ -180,7 +180,7 @@
                     </div>
                     @endforeach
                     </div>
-            </div>
+        
             
 
     </section>
@@ -254,7 +254,7 @@
                     items: 2
                 },
                 1000: {
-                    items: 3
+                    items: 4
                 }
             }
             
