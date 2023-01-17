@@ -50,7 +50,7 @@
             <div class="col-6">
               <div class="form-group">
                 <label for="content">Deskripsi</label>
-                <textarea type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="deskripsi baru" style="height: 300px;" value="{{$news->deskripsi}}">
+                <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="deskripsi baru" style="height: 300px;" value="{{$news->deskripsi}}">
                 <small class="text-danger">@error('deskripsi') {{$message}} @enderror</small>
               </div>
             </div>

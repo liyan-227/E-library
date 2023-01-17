@@ -53,7 +53,8 @@
               <td>
                 <a href="{{ route('news.edit', [$news->id]) }}" class="btn btn-warning float-left m-1">Edit</a>
                 <form class="float-left m-1" action="{{ route('news.destroy', [$news->id]) }}" method="POST" enctype="multipart/form-data">
-                  @method('delete')
+                  @csrf
+                @method('delete')
                   <button type="submit" class="btn btn-danger">Delete</a>
                 </form>
               </td>

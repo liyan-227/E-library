@@ -113,7 +113,6 @@ class NewsController extends Controller
   public function destroy($id)
   {
     $file = News::find($id);
-    File::delete('img/' . $file->nama_file);
     $file->delete();
     return redirect()->back();
   }

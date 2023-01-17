@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsApiController;
+use App\Http\Controllers\ArtikelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,4 @@ Route::get('/news/{id}', [NewsApiController::class, 'show']);
 Route::post('/news', [NewsApiController::class, 'store']);
 Route::put('/news/{id}', [NewsApiController::class, 'update']);
 Route::delete('/news/{id}', [NewsApiController::class, 'destroy']);
-
+Route::get('/artikel/{id}', [NewsApiController::class, 'show']);

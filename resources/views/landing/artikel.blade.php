@@ -1,12 +1,13 @@
 @extends('layouts.landing')
 @section('content')
     <!-- Quote/testimonial aside-->
+    @foreach ($news as $news)
     <aside class="bg-artikel" style="background-image:url({{asset('img/Pattern-01.png')}}); height: 273px;">
         {{-- <img class="vectorartikel img-fluid " src="{{asset('img/Pattern-01.png')}}" alt="Vector"> --}}
         <div class="container">
             <div class="row gx-5 justify-content-center ">
                 <div class="col">
-                    <h1 class="text-center text-white mb-1" style="font-family: Poppins;">JUDUL</h1>
+                    <h1 class="text-center text-white mb-1" style="font-family: Poppins;">{{$news->judul}}</h1>
                     <p class="text-white text-center"><a class="size-28 text-white mb-1"style="text-decoration:none; text-center;" href="/">Beranda</a> > Artikel</p></div>
                 </div>
             </div>
@@ -23,5 +24,5 @@
             </div>
         </div>
     </section>
-
+@endforeach
 @endsection
