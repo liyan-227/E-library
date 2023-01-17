@@ -17,7 +17,16 @@ use App\Http\Controllers\ArtikelController;
 
 
 Route::get('/admin', function () {
-    return view('index');})->name('news.index');
+    return view('index');
+})->name('news.index');
+
+
 Route::resource('/',PhotoController::class);
+
 Route::resource('admin/news', NewsController::class);
-Route::resource('/artikel/{id}', ArtikelController::class);
+
+//Route::resource('artikel/{id}', ArtikelController::class);
+
+Route::prefix('/')->group(function () {
+    Route::get('artikel/{id}', [ArtikelController::class, 'show'])->name('artikel');
+});

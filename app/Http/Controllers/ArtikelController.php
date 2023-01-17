@@ -67,6 +67,8 @@ class ArtikelController extends Controller
    */
   public function show($id)
   {
+    $news = News::find($id);
+    dd($news);
   }
 
   /**
