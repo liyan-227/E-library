@@ -81,8 +81,8 @@
                     <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
                         <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #2C3633;">{{ ($news->judul) }}</h5>
-                            <p class="card-text" style="color: #4C605B;">{{ ($news->deskripsi) }}</p>
+                            <h5 class="card-title" style="color: #2C3633;">{{ Str::limit($news->judul, 20) }}</h5>
+                            <p class="card-text" style="color: #4C605B;">{{ Str::limit($news->deskripsi, 50)}}</p>
                             <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377;" href="http://127.0.0.1:8000/artikel">Baca Selengkapnya</a>
                         </div>
                     </div>
