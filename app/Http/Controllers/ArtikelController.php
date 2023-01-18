@@ -67,8 +67,9 @@ class ArtikelController extends Controller
    */
   public function show($id)
   {
-    $news = News::find($id);
-    dd($news);
+    $news = News::find($id)->get()->toArray();
+    // dd($news['judul']);
+    return view('landing.artikel',compact('news'));
   }
 
   /**

@@ -16,7 +16,7 @@ class PhotoController extends Controller
   public function index()
   {
     $news = News::all();
-    return view('landing.index', compact('news'));
+    return view('home', compact('news'));
   }
   /**
    * Show the form for creating a new resource.
