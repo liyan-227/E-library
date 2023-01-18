@@ -15,7 +15,7 @@ class ArtikelController extends Controller
    */
   public function index()
   {
-    $news = News::all();
+    $news = News::all(); 
     return view('landing.artikel', compact('news'));
   }
   /**
@@ -65,8 +65,8 @@ class ArtikelController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
-  {
+  public function show($id) //<<<detail selengkap
+  { 
     $news = News::find($id)->get()->toArray();
     // dd($news['judul']);
     return view('landing.artikel',compact('news'));
