@@ -15,18 +15,18 @@ use App\Http\Controllers\ArtikelController;
 |
 */
 
-
+Route::get('artikel/{id}', [ArtikelController::class, 'show'])->name('artikel');
 Route::get('/admin', function () {
     return view('index');
 })->name('news.index');
 
 
-Route::resource('/',PhotoController::class);
+Route::get('/',[PhotoController::class ,'index']);
 
 Route::resource('admin/news', NewsController::class);
 
 //Route::resource('artikel/{id}', ArtikelController::class);
 
 Route::prefix('/')->group(function () {
-    Route::get('artikel/{id}', [ArtikelController::class, 'show'])->name('artikel');
+    
 });
