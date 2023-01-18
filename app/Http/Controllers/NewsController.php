@@ -56,7 +56,7 @@ class NewsController extends Controller
       'file' => $nama_file,
       'deskripsi' => $request->deskripsi,
     ]);
-    return redirect()->route('news.index');
+    return redirect()->route('news.index') -> with('success', 'Data berhasil di tambah');
 
   }
 
