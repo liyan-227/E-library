@@ -33,7 +33,7 @@
             <div class="image">
                 <img src="{{asset('img/logo.png')}}" style="width: 64px; height: 64px; margin-right: 10px; margin-bottom: 10px;" class="img-circle elevation-2" alt="User Image">
             </div>
-            <a class="navbar-brand" style="font-family:Cormorant; color: #EDBB62;" href="{{route('index')}}">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
+            <a class="navbar-brand " style="font-family:Cormorant; color: #EDBB62;" href="{{route('index')}}">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
@@ -126,9 +126,12 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script>
         $('.news-carousel').owlCarousel({
-             loop: true,
+            loop: true,
             margin: 10,
             nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverpause:true,
             responsive: {
                 0: {
                     items: 1

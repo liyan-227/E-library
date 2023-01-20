@@ -3810,6 +3810,8 @@ textarea.form-control-lg {
   .dropdown-menu-xl-start {
     --bs-position: start;
   }
+
+
   .dropdown-menu-xl-start[data-bs-popper] {
     right: auto;
     left: 0;
@@ -4222,6 +4224,13 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
+@media (max-width: 388px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
