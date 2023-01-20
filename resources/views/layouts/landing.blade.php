@@ -33,14 +33,14 @@
             <div class="image">
                 <img src="{{asset('img/logo.png')}}" style="width: 64px; height: 64px; margin-right: 10px; margin-bottom: 10px;" class="img-circle elevation-2" alt="User Image">
             </div>
-            <a class="navbar-brand" style="font-family:Cormorant; color: #EDBB62;" href="#page-top">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
+            <a class="navbar-brand" style="font-family:Cormorant; color: #EDBB62;" href="{{route('index')}}">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-2 my-1 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="{{route('index')}}">Beranda</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                             Layanan
@@ -83,7 +83,7 @@
                 <div class="col-5 text-white">
 
                     <h6 class="dropdown-header text-white">Menu</h6>
-                    <a class="dropdown-item text-white" style="font-family: Poppins;" href="#beranda">Beranda</a>
+                    <a class="dropdown-item text-white" style="font-family: Poppins;" href="{{route('index')}}">Beranda</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-perpus">E-Perpustakaan</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>

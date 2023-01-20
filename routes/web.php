@@ -21,7 +21,7 @@ Route::get('/admin', function () {
 })->name('news.index');
 
 
-Route::get('/',[PhotoController::class ,'index']);
+Route::get('/',[PhotoController::class ,'index'])->name('index');
 
 Route::resource('admin/news', NewsController::class);
 
