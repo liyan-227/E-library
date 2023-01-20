@@ -43,6 +43,13 @@
             </div>
             <div class="col-6">
               <div class="form-group">
+                <label for="penulis">Penulis</label>
+                <input type="text" name="penulis" class="form-control @error('penulis') is-invalid @enderror" placeholder="penulis baru" value="{{$news->penulis}}">
+                <small class="text-danger">@error('penulis') {{$message}} @enderror</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
                 <label for="picture">Gambar</label>
                 <input type="file" name="file" placeholder="Image" multiple>
               </div>
@@ -50,8 +57,7 @@
             <div class="col-6">
               <div class="form-group">
                 <label for="content">Deskripsi</label>
-
-                <textarea type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="deskripsi baru" style="height: 300px;">{{$news->deskripsi}}</textarea>   
+                <textarea id="mytextarea" type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="deskripsi baru" style="height: 300px;">{{$news->deskripsi}}</textarea>   
                 <small class="text-danger">@error('deskripsi') {{$message}} @enderror</small>
               </div>
             </div>

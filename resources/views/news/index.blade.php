@@ -51,7 +51,7 @@
               <td>{{ $news->judul }}</td>
               <td>{{ $news->penulis }}</td>
               <td><img width="150px" src="{{ url('/img/'.$news->file) }}"></td>
-              <td>{{$news->deskripsi }}</td>
+              <td>{!! Str::limit($news->deskripsi, 500) !!}</td>
               <td>
                 <a href="{{ route('news.edit', [$news->id]) }}" class="btn btn-warning float-left m-1">Edit</a>
                 <form class="float-left m-1" action="{{ route('news.destroy', [$news->id]) }}" method="POST" enctype="multipart/form-data">

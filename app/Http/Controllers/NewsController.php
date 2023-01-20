@@ -101,6 +101,7 @@ class NewsController extends Controller
     ]);
     News::findOrFail($id)->update([
       'judul' => $request->judul,
+      'penulis' => $request->penulis,
       'file' => $request->file('file')->store('file'),
       'deskripsi' => $request->deskripsi,
     ]);

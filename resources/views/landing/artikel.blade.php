@@ -19,7 +19,7 @@
                         <time >{{$n['created_at']}} <a>{{$n['penulis']}}</a></time>
 
                         <div>
-                            <p class="my-4" style="font-family: Poppins;color: #4C605B;">{{$n['deskripsi']}}</p>
+                            <p class="my-4" style="font-family: Poppins;color: #4C605B;">{!!$n['deskripsi']!!}</p>
                         </div>
                     </div>
                 </div>

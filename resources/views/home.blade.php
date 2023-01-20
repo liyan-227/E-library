@@ -114,7 +114,7 @@
                     <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
                         <div class="card-body text-center">
                             <h5 class="card-title text-start" style="color: #2C3633;">{{ Str::limit($news->judul, 30) }}</h5>
-                            <p class="card-text text-start" style="color: #4C605B;">{{ Str::limit($news->deskripsi, 200)}}</p>
+                            <p class="card-text text-start" style="color: #4C605B;">{!! Str::limit($news->deskripsi, 200)!!}</p>
                             <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377;" href="{{ route('artikel',['id' => $news->id]) }}">Baca Selengkapnya</a>
 
                         </div>
