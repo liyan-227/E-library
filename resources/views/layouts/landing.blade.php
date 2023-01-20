@@ -126,7 +126,7 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script>
         $('.news-carousel').owlCarousel({
-            // loop: true,
+             loop: true,
             margin: 10,
             nav: true,
             responsive: {

@@ -66,10 +66,10 @@ class ArtikelController extends Controller
    * @return \Illuminate\Http\Response
    */
   public function show($id) //<<<detail selengkap
-  { 
-    $news = News::find($id)->limit(1)->get()->toArray();
-    // dd($news['judul']);
-    return view('landing.artikel',compact('news'));
+  { $post = News::find($id)->get()->toArray();
+    $news = News::where("id",$id)->get()->toArray();
+    // dd($news);
+    return view('landing.artikel',compact('news','post'));
   }
 
   /**
