@@ -16,7 +16,8 @@
                 <div class="container">
                     <img class="imageartikel rounded mx-auto d-block" style="width: 994px; height: 464px;" src="{{asset('/img/'.$n['file'])}}" alt="perpus">
                     <div class="row">
-                        <time >{{$n['created_at']}}</time>
+                        <time >{{$n['created_at']}} <a>{{$n['penulis']}}</a></time>
+
                         <div>
                             <p class="my-4" style="font-family: Poppins;color: #4C605B;">{{$n['deskripsi']}}</p>
                         </div>

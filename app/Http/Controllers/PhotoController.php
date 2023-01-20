@@ -38,8 +38,9 @@ class PhotoController extends Controller
   {
     $request->validate([
       'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-      'deskripsi' => 'required|max:1000',
+      'deskripsi' => 'required',
     ]);
 
     $file = $request->file('file');
@@ -92,13 +93,15 @@ class PhotoController extends Controller
   {
     $request->validate([
       'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-      'deskripsi' => 'required|max:1000',
+      'deskripsi' => 'required',
     ]);
     News::findOrFail($id)->update([
-      'judul' => $request->judul,
-      'file' => $request->file('file')->store('file'),
-      'deskripsi' => $request->deskripsi,
+      'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
+      'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+      'deskripsi' => 'required',
     ]);
     return redirect()->route('news.index');
   }

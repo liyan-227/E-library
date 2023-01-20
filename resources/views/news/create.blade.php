@@ -42,6 +42,13 @@
             </div>
             <div class="col-6">
               <div class="form-group">
+                <label for="title">Penulis</label>
+                <input type="text" name="penulis" class="form-control @error('penulis') is-invalid @enderror" placeholder="Masukkan penulis">
+                <small class="text-danger">@error('penulis') {{$message}} @enderror</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
                 <label for="picture">Gambar</label>
                 <input type="file" name="file" placeholder="Image" multiple>
               </div>

@@ -39,8 +39,9 @@ class NewsController extends Controller
   {
     $request->validate([
       'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-      'deskripsi' => 'required|max:1000',
+      'deskripsi' => 'required',
     ]);
 
     $file = $request->file('file');
@@ -54,6 +55,7 @@ class NewsController extends Controller
     News::create([
       'judul'=> $request->judul,
       'file' => $nama_file,
+      'penulis'=> $request->penulis,
       'deskripsi' => $request->deskripsi,
     ]);
     return redirect()->route('news.index') -> with('success', 'Data berhasil di tambah');
@@ -93,8 +95,9 @@ class NewsController extends Controller
   {
     $request->validate([
       'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-      'deskripsi' => 'required|max:1000',
+      'deskripsi' => 'required',
     ]);
     News::findOrFail($id)->update([
       'judul' => $request->judul,

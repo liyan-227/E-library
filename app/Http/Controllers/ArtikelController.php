@@ -38,8 +38,9 @@ class ArtikelController extends Controller
   {
     $request->validate([
       'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-      'deskripsi' => 'required|max:1000',
+      'deskripsi' => 'required',
     ]);
 
     $file = $request->file('file');
@@ -51,9 +52,10 @@ class ArtikelController extends Controller
     $file->move($tujuan_upload, $nama_file);
 
     News::create([
-      'judul'=> $request->judul,
-      'file' => $nama_file,
-      'deskripsi' => $request->deskripsi,
+      'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
+      'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+      'deskripsi' => 'required',
     ]);
     return redirect()->route('news.index');
 
@@ -95,8 +97,9 @@ class ArtikelController extends Controller
   {
     $request->validate([
       'judul' => 'required|max:200',
+      'penulis' => 'required|max:200',
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-      'deskripsi' => 'required|max:1000',
+      'deskripsi' => 'required',
     ]);
     News::findOrFail($id)->update([
       'judul' => $request->judul,

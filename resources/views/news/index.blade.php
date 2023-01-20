@@ -38,6 +38,7 @@
             <tr>
               <th>No</th>
               <th>Judul</th>
+              <th>Penulis</th>
               <th>Gambar</th>
               <th>Deskripsi</th>
               <th>Action</th>
@@ -48,6 +49,7 @@
             <tr>
               <td>{{ $loop->iteration }}</td>
               <td>{{ $news->judul }}</td>
+              <td>{{ $news->penulis }}</td>
               <td><img width="150px" src="{{ url('/img/'.$news->file) }}"></td>
               <td>{{$news->deskripsi }}</td>
               <td>
