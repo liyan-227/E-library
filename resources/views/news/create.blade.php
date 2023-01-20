@@ -40,7 +40,8 @@
                 <small class="text-danger">@error('judul') {{$message}} @enderror</small>
               </div>
             </div>
-            <div class="col-6">
+  
+          <div class="col-6">
               <div class="form-group">
                 <label for="title">Penulis</label>
                 <input type="text" name="penulis" class="form-control @error('penulis') is-invalid @enderror" placeholder="Masukkan penulis">
