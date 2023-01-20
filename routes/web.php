@@ -15,7 +15,7 @@ use App\Http\Controllers\ArtikelController;
 |
 */
 
-Route::get('artikel/{id}', [ArtikelController::class, 'show'])->name('artikel');
+Route::get('artikel/{id}/{slug}', [ArtikelController::class, 'show'])->name('artikel');
 Route::get('/admin', function () {
     return view('index');
 })->name('news.index');

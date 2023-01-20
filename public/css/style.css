@@ -4238,6 +4238,21 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
 }
+
+.bungkus{
+  display: flex;
+  justify-content: center;
+align-items: center;
+padding: 8px 24px;
+width: 238px;
+height: 45px;
+font-family: 'Poppins';
+font-style: normal;
+background-color: #BAFFED;
+border-radius: 50px;
+
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;

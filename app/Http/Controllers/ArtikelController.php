@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Http\Testing\File;
+use Illuminate\Support\Str;
 
 class ArtikelController extends Controller
 {
@@ -39,6 +40,7 @@ class ArtikelController extends Controller
     $request->validate([
       'judul' => 'required|max:200',
       'penulis' => 'required|max:200',
+      'slug' => Str::slug($request->judul),
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
       'deskripsi' => 'required',
     ]);
@@ -54,6 +56,7 @@ class ArtikelController extends Controller
     News::create([
       'judul' => 'required|max:200',
       'penulis' => 'required|max:200',
+      'slug' => Str::slug($request->judul),
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
       'deskripsi' => 'required',
     ]);
@@ -70,7 +73,7 @@ class ArtikelController extends Controller
   public function show($id) //<<<detail selengkap
   { $post = News::find($id)->get()->toArray();
     $news = News::where("id",$id)->get()->toArray();
-    // dd($news);
+    //dd($news,$post);
     return view('landing.artikel',compact('news','post'));
   }
 
@@ -98,11 +101,13 @@ class ArtikelController extends Controller
     $request->validate([
       'judul' => 'required|max:200',
       'penulis' => 'required|max:200',
+      'slug' => Str::slug($request->judul),
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
       'deskripsi' => 'required',
     ]);
     News::findOrFail($id)->update([
       'judul' => $request->judul,
+      'slug' => Str::slug($request->judul),
       'file' => $request->file('file')->store('file'),
       'deskripsi' => $request->deskripsi,
     ]);

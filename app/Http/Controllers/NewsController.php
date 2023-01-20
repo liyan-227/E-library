@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Http\Testing\File;
+use Illuminate\Support\Str;
 
 class NewsController extends Controller
 {
@@ -40,6 +41,7 @@ class NewsController extends Controller
     $request->validate([
       'judul' => 'required|max:200',
       'penulis' => 'required|max:200',
+      'slug' => Str::slug($request->judul),
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
       'deskripsi' => 'required',
     ]);
@@ -55,6 +57,7 @@ class NewsController extends Controller
     News::create([
       'judul'=> $request->judul,
       'file' => $nama_file,
+      'slug' => Str::slug($request->judul),
       'penulis'=> $request->penulis,
       'deskripsi' => $request->deskripsi,
     ]);
@@ -96,12 +99,14 @@ class NewsController extends Controller
     $request->validate([
       'judul' => 'required|max:200',
       'penulis' => 'required|max:200',
+      'slug' => Str::slug($request->judul),
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
       'deskripsi' => 'required',
     ]);
     News::findOrFail($id)->update([
       'judul' => $request->judul,
       'penulis' => $request->penulis,
+      'slug' => Str::slug($request->judul),
       'file' => $request->file('file')->store('file'),
       'deskripsi' => $request->deskripsi,
     ]);

@@ -19,6 +19,7 @@ class CreateNewsTable extends Migration
             $table->string('file', 500);
             $table->longText('deskripsi');
             $table->string('penulis', 200);
+            $table->string('slug', 200);
             $table->timestamps();
         });
     }

@@ -14,9 +14,14 @@
             <!-- App E-perpus section-->
          <section id="E-perpus">
                 <div class="container">
-                    <img class="imageartikel rounded image-fluid"  src="{{asset('/img/'.$n['file'])}}" style="width: 80%; height: 80%;" alt="perpus">
+                    <div class="text-center"><img class="imageartikel rounded image-fluid"  src="{{asset('/img/'.$n['file'])}}" style="width: 80%; height: 80%;" alt="perpus"></div>
                     <div class="row">
-                        <time >{{$n['created_at']}} <a>{{$n['penulis']}}</a></time>
+                        <div class="bungkus">
+                            <time style="color: #005A43"><i class="bi bi-calendar-event-fill"> </i> {{$n['created_at']}} 
+                        </div>
+                        <div class="bungkus"><a style="color: #005A43"><i class="bi bi-person-fill"> </i> {{$n['penulis']}}</a>
+                        </div>
+                    </time>
                         <p class="my-4 text-justify" style="font-family: Poppins;color: #4C605B; ">{!!$n['deskripsi']!!}</p>
                         
                     </div>
@@ -42,8 +47,8 @@
                     <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news['file']) }}">
                         <div class="card-body text-center">
                             <h5 class="card-title text-start" style="color: #2C3633;">{{ Str::limit($news['judul'], 30) }}</h5>
-                            <a class="card-text text-decoration-none text-start" style="color: #4C605B;">{!! Str::limit($news['deskripsi'], 200) !!}</a>
-                            <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377;" href="{{ route('artikel',['id' => $news['id']]) }}">Baca Selengkapnya</a>
+                            <a class="card-text text-decoration-none text-start" style="color: #4C605B;">{!! Str::limit($news['deskripsi'], 200) !!}</a><br>
+                            <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377;" href="{{ route('artikel',['id' => $news['id'],'slug' => $news['slug']]) }}">Baca Selengkapnya</a>
                         </div>
                     </div>
                     @endforeach
