@@ -48,17 +48,18 @@
                 <small class="text-danger">@error('penulis') {{$message}} @enderror</small>
               </div>
             </div>
-            <div class="col-6">
-              <div class="form-group">
-                <label for="picture">Gambar</label>
-                <input type="file" name="file" placeholder="Image" multiple>
-              </div>
-            </div>
+          
             <div class="col-6">
               <div class="form-group">
                 <label for="content">Deskripsi</label>
                 <textarea id="mytextarea" type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="Masukkan deskripsi" style="height: 300px;"></textarea>   
                 <small class="text-danger">@error('deskripsi') {{$message}} @enderror</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="picture">Gambar</label>
+                <input type="file" name="file" placeholder="Image" multiple>
               </div>
             </div>
           </div>
@@ -68,10 +69,14 @@
           <div class="d-flex justify-content-end">
             <a href="{{ route('news.index') }}" class="m-1 btn btn-outline-danger">Kembali</a>
             <button type="submit" class="m-1 btn btn-success">Tambah</button>
+           
           </div>
         </div>
       </form>
-    </div><!-- /.container-fluid -->
+    </div>
+    @if(session('success'))
+            <div class="alert alert-success">{{session('success')}}</div>
+            @endif<!-- /.container-fluid -->
 </section>
 <!-- /.content -->
 @endsection

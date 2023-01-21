@@ -103,6 +103,7 @@ class NewsController extends Controller
       'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
       'deskripsi' => 'required',
     ]);
+
     News::findOrFail($id)->update([
       'judul' => $request->judul,
       'penulis' => $request->penulis,

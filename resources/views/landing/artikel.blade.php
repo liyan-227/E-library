@@ -16,7 +16,8 @@
                 <div class="container">
                     <div class="text-center"><img class="imageartikel rounded image-fluid"  src="{{asset('/img/'.$n['file'])}}" style="width: 80%; height: 80%;" alt="perpus"></div>
                     <div class="row">
-                        <div class="bungkus">
+                    <h1 class="text-center mb-1" style="font-family: Poppins;"> {{$n['judul']}}</h1>  
+                        <div class="bungkus offset-lg-1">
                             <time style="color: #005A43"><i class="bi bi-calendar-event-fill"> </i> {{$n['created_at']}} 
                         </div>
                         <div class="bungkus"><a style="color: #005A43"><i class="bi bi-person-fill"> </i> {{$n['penulis']}}</a>

@@ -77,7 +77,7 @@
                     <h3 style="font-family: Poppins; color: #005A43;">E-Perpustakaan</h3>
                     <h2 style="font-family: Cormorant;color: #000000;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
                     <p class="my-4" style="font-family: Poppins;color: #4C605B;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
-                    <button class="button"><a class="text-decoration-none text-white" href="http://localhost/perpustakaan/index.php">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></a> </button>
+                    <button class="button"><a class="text-decoration-none text-white" href="https://slims.web.id/demo/index.php">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
             </div>
         </div>
