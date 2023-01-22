@@ -25,7 +25,7 @@ Route::get('/admin', function () {
 
 Route::get('/',[PhotoController::class ,'index'])->name('index');
 
-Route::resource('admin/news', NewsController::class);
+Route::resource('admin/news', NewsController::class)->middleware('auth');
 
 //Route::resource('artikel/{id}', ArtikelController::class);
 
