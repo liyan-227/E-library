@@ -58,6 +58,24 @@
             <i class="fas fa-th-large"></i>
           </a>
         </li>
+        <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-user"></i>
+                                        {{ Auth::user()->email }} 
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <a href="{{ route('logoutaksi') }}">
+                                                <i class="fa fa-power-off"></i> 
+                                                Log Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
       </ul>
     </nav>
     <!-- /.navbar -->
