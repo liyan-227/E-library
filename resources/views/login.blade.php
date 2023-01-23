@@ -6,12 +6,22 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Admin | Login</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('css/style.css')}} " />
     </head>
 
     <body>
+
+    <nav class="navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <div class="image">
+                <img src="{{asset('img/logo.png')}}" style="float: left; width: 64px; height: 64px; margin-right: 10px; " class="img-circle elevation-2" alt="User Image">
+            </div>
+            <a class="navbar-brand mt-2" style="font-family:Cormorant; color: #EDBB62;" href="{{route('index')}}">PERPUSTAKAAN <br> STIDKI AL HAMIDY</a>
+</div>
+</nav>
         <div class="container"><br>
             <div class="col-md-4 col-md-offset-4">
-                <h2 class="text-center">Admin Login</h2>
+                <h2 class="text-center mt-5">Admin Login</h2>
                 <hr>
                 @if (session('error'))
                     <div class="alert alert-danger">
