@@ -24,9 +24,14 @@
   <div class="container-fluid">
     <!-- Small boxes (Stat box) -->
     <div class="card">
+      
+    @if(session('success'))
+            <div class="alert alert-success">{{session('success')}}</div>
+            @endif<!-- /.container-fluid -->
       <div class="card-header">
         <div class="d-flex justify-content-between">
           <h3 class="card-title">List Artikel</h3>
+
           <a href="{{ route('news.create') }}" class="btn btn-sm btn-success"><i class="fas fa-plus"></i>
             Tambah Data</a>
         </div>

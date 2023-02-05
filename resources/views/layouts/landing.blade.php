@@ -28,8 +28,8 @@
 <body >
 
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light position-fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
+<nav class="navbar navbar-expand-lg navbar-lightshadow-sm position-static" id="mainNav">
+        <div class="container px-5 ">
             <div class="image">
                 <img src="{{asset('img/logo.png')}}" style="width: 64px; height: 64px; margin-right: 10px; margin-bottom: 10px;" class="img-circle elevation-2" alt="User Image">
             </div>
@@ -52,8 +52,8 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#Berita">Artikel</a></li>
-                    <a class="button text-decoration-none text-center pt-2" href="#E-perpus">
-                        <p>Explore Perpustakaan</p>
+                    <a class="button text-decoration-none text-center" href="#E-perpus">
+                        <p style="margin-top:10px;">Explore Perpustakaan</p>
                     </a>
                 </ul>
             </div>
@@ -68,7 +68,6 @@
     <!-- Footer-->
     <img class="vectorbawah img-fluid float-right" src="{{asset('img/vectorbawah.png')}}" alt="Vector">
     <footer id="layanan" class="bg-gradient-primary-to-secondary py-5">
-
         <div class="container gx-lg-5">
             <div class="row">
                 <div class="col-lg-7">
@@ -76,6 +75,7 @@
                     <p class="footer-text">PERPUSTAKAAN <br> STIDKI AL HAMIDY</p>
                     <a class="text-decoration-none" style="color:#F9F9ED; font-style: normal; font-family: Poppins;"><br>Lorem ipsum dolor sit amet consectetur. Nulla ut sed dictumst non. Odio massa quam sed at varius nibh. Libero donec sollicitudin mollis eu. Non velit adipiscing tempus sit egestas non facilisis. Vestibulum amet.<br><br></a>
                     <i class="bi bi-geo-alt-fill text-decoration-none" style="color: #F9F9ED; font-family: Poppins;"><a class="text-location text-decoration-none"> Potoan, Patoan Dajah, Kec. Palengaan, Kabupaten Pamekasan, Jawa Timur 69362</a></i>
+                    
                     <br>
                     <i class="bi bi-telephone-fill" style="color: #F9F9ED; font-family: Poppins; font-style: normal;"> +62 823-3706-3767 </i>
                     <br><br>
@@ -88,17 +88,24 @@
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#E-prints">E-prints</a>
                     <a class="dropdown-item text-white" style="font-family: Poppins;" href="#layanan">Layanan</a>
                     <br><br>
-                    <div class="float-right"><i class="bi bi-whatsapp" style="width: 26px; height: 26px;"></i> <i class="bi bi-instagram" style="width: 100px; height: 100px;"></i> <i class="bi bi-envelope" style="width: 26px; height: 26px;"></i> <i class="bi bi-youtube" style="width: 26px; height: 26px;"></i></div>
+                    
                 </div>
-
+               
 
             </div>
-
+            <div class=" text-white" style="padding-bottom:100px; float:right;">
+            <a href=""> <img class="img-fluid" src="{{asset('img/whatsapp.png')}}" alt="Vector"></a> 
+            <a href=""><img class="img-fluid" src="{{asset('img/instagram.png')}}" alt="Vector"></a>
+             <a href=""><img class="img-fluid" src="{{asset('img/gmail.png')}}" alt="Vector"></a> 
+             <a href=""> <img class="img-fluid" src="{{asset('img/youtube.png')}}" alt="Vector"></a>
+            </div>
+            <br>
             <hr style="color: #F9F9ED;">
             <a class="text-start text-decoration-none" style="color: #F9F9ED;font-family: 'Poppins';font-style: normal;">&copy; 2023 Perpustakaan STIDKI AL HAMIDY </a>
             <a class="text-end text-decoration-none" style="float: right; color: #F9F9ED;font-family: 'Poppins';font-style: normal;">Terms • Privacy</a>
 
         </div>
+        
     </footer>
 
 

@@ -28,11 +28,13 @@
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
   @stack('css')
   {{-- Text Editor --}}
-  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/lypdhosxwmvh113v8iawq9uqd3y7jlw4izon5doodxp1a0om/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
   <script>
-    tinymce.init({
-      selector: '#mytextarea'
-    });
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+      
   </script>
 </head>
 

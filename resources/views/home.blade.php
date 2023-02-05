@@ -3,16 +3,16 @@
 @section('content')
 
 <!-- Mashead header-->
-    <header class="masthead mb-5" id="beranda">
+    <header class="masthead" id="beranda" >
         <div class="container px-3" style="background-image:url({{asset('img/Pattern-01.png')}}); border-radius: 48px;">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
                     <!-- Mashead text and app badges-->
-                    <div class="mb-2 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-1 lh-1 mb-5" style="color: #004634; font-family: Cormorant;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
+                    <div class="mb-2 ms-5 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-1 " style="color: #004634; font-family: Cormorant; margin-right:60px;margin-bottom:24px;">PERPUSTAKAAN STIDKI AL HAMIDY</h1>
                         <p class="lead fw-normal text-muted mb-5" style="font-family: Poppins;">Dengan e-perpustakaan, mahasiswa atau dosen dapat mencari, membaca, dan mengunduh buku-buku digital sesuai dengan kebutuhan mereka. Web e-perpustakaan juga memberikan kemudahan bagi para pustakawan. Mereka dapat dengan mudah mengelola dan memantau peminjaman buku-buku serta mengelola data inventaris perpustakaan.</p>
-                        <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <a class="button text-decoration-none text-center text-white pt-2" href="#E-perpus">Explore Perpustakaan <i class="bi bi-arrow-right" ;></i></a>
+                        <div class="d-flex flex-column flex-lg-row align-items-center" >
+                            <a class="button text-decoration-none text-center text-white"  href="#E-perpus" style="padding-top:10px;">Explore Perpustakaan <i class="bi bi-arrow-right" ;></i></a>
                         </div>
                     </div>
                 </div>
@@ -61,9 +61,9 @@
     <img class="vectorkanan img-fluid " src="{{asset('img/vectorkanan.png')}}" alt="Vector">
     <aside class="bg-gradient-primary-to-secondary" style="height: 273px;">
         <div class="container">
-            <div class="row gx-5 justify-content-center ">
+            <div class="row gx-1 justify-content-center ">
                 <div class="col-lg-9">
-                    <div class="text-center size-24 text-white mb-1" style="font-family: Poppins;">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
+                    <div class="text-center text-white" style="font-family: Poppins;font-size:24px;">"Seorang hamba yang menyandarkan dirinya kepada ilmu, maka Allah akan mengangkat derajatnya, dan seorang hamba yang tidak menyandarkan dirinya kepada ilmu, maka Allah akan menurunkannya." (HR. Ahmad)</div>
                 </div>
             </div>
         </div>
@@ -73,10 +73,10 @@
         <div class="container">
             <div class="row">
                 <img class="col-lg-4" src="{{asset('img/gambar perpus.png')}}" alt="perpus">
-                <div class="col-lg-6">
-                    <h3 style="font-family: Poppins; color: #005A43;">E-Perpustakaan</h3>
-                    <h2 style="font-family: Cormorant;color: #000000;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
-                    <p class="my-4" style="font-family: Poppins;color: #4C605B;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
+                <div class="col-lg-6 ms-5">
+                    <h3 style="font-family: Poppins; color: #005A43; margin-top:33px; margin-bottom:16px;">E-Perpustakaan</h3>
+                    <h2 style="font-family: Cormorant;color: #000000; margin-bottom:24px;">MEMUDAHKAN AKSES LITERASI ANDA</h2>
+                    <p class="my-4" style="font-family: Poppins;color: #4C605B;margin-bottom:40px;">E-Perpustakaan adalah sebuah perpustakaan yang memungkinkan penggunanya untuk mengakses koleksi buku, jurnal, dan dokumen lainnya secara digital melalui internet. Fungsi utama dari e-perpustakaan adalah menyediakan akses ke sumber-sumber informasi yang dapat diakses secara online.</p>
                     <button class="button"><a class="text-decoration-none text-white" href="https://slims.web.id/demo/index.php">Menuju E-Perpustakaan <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
             </div>
@@ -103,21 +103,28 @@
   <!-- Konten section-->
   <section id="Berita" class="container">
     <div>
-        <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;line-height: 100%;color: #005A43;">Artikel</h4>
-        <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;"><br>Dapatkan informasi <br>dengan artikel kami</h1>
+        <h4 style="font-family: 'Poppins'; font-style: normal; font-size: 24px;color: #005A43;">Artikel</h4>
+        <h1 style="font-family: 'Cormorant';text-transform: uppercase;color: #2C3633;margin-top:16px;margin-bottom:80px;">Dapatkan informasi <br>dengan artikel kami</h1>
     </div>
 
+    <script>$("#owl-example").owlCarousel({
+  navigation: true,
+  navigationText: ["<img src={{asset('img/perpus2.png')}}>","<img src='mynextimage.png'>"]
+});</script>
 
             <div class="news-carousel owl-carousel owl-theme">
                @foreach ($news as $news)
-                    <div class="card mx-2 m-sm-2 col-12" style="width: 18rem; border-radius: 20px; width: 379px; color:#FFFFFF;">
-                    <img class="card-img-top img-fluid mt-2 rounded" style="width: 379px;height: 230px;" src="{{ url('/img/'.$news->file) }}">
+               <div class="card" style="border-radius: 16px;">
+               <img class="card-img-top img-fluid" style="width: 430px;height: 230px;border-radius: 16px 16px 0px 0px; " src="{{ url('/img/'.$news->file) }}">
+              <div class="row mx-2 m-sm-2 col-12" style="width: 18rem;border-radius: 16px;  width: 379px;">
+             
                         <div class="card-body text-center">
                             <h5 class="card-title text-start" style="color: #2C3633;">{{ Str::limit($news->judul, 30) }}</h5>
-                            <a class="card-text text-start text-decoration-none" style="color: #4C605B;">{!! Str::limit($news->deskripsi, 200)!!}</a>
+                            <a class="card-text text-start text-justify text-decoration-none" style="color: #4C605B;">{!! Str::limit($news->deskripsi, 200)!!}</a>
                             <a class="buttonberita btn" style="border: 1px solid #E7C377; font-family: 'Poppins';font-style: normal;color: #E7C377;" href="{{ route('artikel',['id' => $news->id, 'slug' => $news->slug]) }}">Baca Selengkapnya</a>
 
                         </div>
+                    </div>
                     </div>
                     @endforeach
                     </div>

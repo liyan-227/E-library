@@ -65,18 +65,21 @@
           </div>
         </div>
         <!-- /.row -->
+       
         <div class="card-footer">
           <div class="d-flex justify-content-end">
             <a href="{{ route('news.index') }}" class="m-1 btn btn-outline-danger">Kembali</a>
             <button type="submit" class="m-1 btn btn-success">Tambah</button>
-           
+            @if(session('berhasil'))
+            <script>
+              alert("data berhasil ditambahkan");
+            </script>
+            @endif<!-- /.container-fluid -->
           </div>
         </div>
       </form>
     </div>
-    @if(session('success'))
-            <div class="alert alert-success">{{session('success')}}</div>
-            @endif<!-- /.container-fluid -->
+   
 </section>
 <!-- /.content -->
 @endsection

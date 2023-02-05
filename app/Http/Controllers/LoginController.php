@@ -13,7 +13,8 @@ class LoginController extends Controller
         if (Auth::check()) {
             return redirect('admin');
         } else {
-            return view('login');
+           // dd(check());
+         return view('login');
         }
     }
 
